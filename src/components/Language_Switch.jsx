@@ -1,5 +1,4 @@
 import React from 'react'
-import { MdLanguage as IconLanguage } from 'react-icons/md';
 import { MdNightlightRound as IconDarkMode } from 'react-icons/md';
 import { BsSun as IconBrightMode } from 'react-icons/bs';
 import { languages } from '../js/languages'

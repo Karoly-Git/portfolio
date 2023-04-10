@@ -8,7 +8,7 @@ import YouTubeVideos from './My_YouTube_Videos'
 import UsedTechs from './Section_Used_Techs'
 import InterestingThings from './My_Interesting_Things'
 import MyProjects from './Section_My_Projects'
-import Language_Switch from './Language_Switch'
+import LanguageSwitch from './Language_Switch'
 
 /*As I found programing and web development fare more interesting than mechanical engineering,
 I switched to web development from mechanical engineering. This is how I become a Frontend Web Developer.
@@ -30,7 +30,7 @@ export default function Home(props) {
                 showForm={props.showForm}
                 hideForm={props.hideForm}
             />
-            <Language_Switch
+            <LanguageSwitch
                 currentLanguage={props.currentLanguage}
                 changeCurrentLanguage={props.changeCurrentLanguage}
             />

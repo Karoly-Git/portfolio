@@ -13,6 +13,7 @@ export default function Maintenance() {
                 <div className="img-box">
                     <img className='logo' src={logo} alt="logo" />
                     <iframe
+                        title='tool-giphy-unique'
                         src="https://giphy.com/embed/h8lH6itZv19SEGhf5A"
                         className="tool-giphy giphy-embed"
                         allowFullScreen>

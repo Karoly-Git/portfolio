@@ -1,4 +1,5 @@
 import { React, useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Home'
 import GetInTouch from './Section_Get_In_Touch'
 import '../css/website.css'
@@ -23,17 +24,30 @@ export default function Website() {
     }
 
     return (
-        <>
+        <Router>
             <header></header>
             <main>
-                <Home
-                    isFormDisplayed={isFormDisplayed}
-                    showForm={showForm}
-                    hideForm={hideForm}
-                    languages={languages}
-                    currentLanguage={currentLanguage}
-                    changeCurrentLanguage={changeCurrentLanguage}
-                />
+                <Routes>
+                    <Route
+                        path='/portfolio'
+                        element={
+                            <Home
+                                isFormDisplayed={isFormDisplayed}
+                                showForm={showForm}
+                                hideForm={hideForm}
+                                languages={languages}
+                                currentLanguage={currentLanguage}
+                                changeCurrentLanguage={changeCurrentLanguage}
+                            />
+                        }
+                    />
+                    <Route
+                        path='*'
+                        element={
+                            <h1>Page not found</h1>
+                        }
+                    />
+                </Routes>
             </main>
             <footer>
                 <GetInTouch
@@ -42,6 +56,6 @@ export default function Website() {
                     currentLanguage={currentLanguage}
                 />
             </footer>
-        </>
+        </Router>
     )
 }

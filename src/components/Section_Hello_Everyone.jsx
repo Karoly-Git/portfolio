@@ -21,9 +21,6 @@ export default function HelloEveryone(props) {
             <main className="section-main">
                 <div className="page">
                     <section className="box">
-                        <header className="box-header">
-                            <h3></h3>
-                        </header>
                         <div className="box-main">
                             <div className="photobox">
                                 <img src={helloImage} alt="" />
