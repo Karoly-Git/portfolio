@@ -29,7 +29,7 @@ export default function Website() {
             <main>
                 <Routes>
                     <Route
-                        path='/'
+                        path='/portfolio'
                         element={
                             <Home
                                 isFormDisplayed={isFormDisplayed}
