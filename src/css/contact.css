@@ -5,7 +5,7 @@
   background-color: gray;
   position: fixed;
   left: 27.5vw;
-  top: 5vh;
+  top: 6rem;
   z-index: 11;
   *display: none;
   overflow: scroll;
@@ -23,7 +23,7 @@
   color: rgba(0, 0, 0, 0.7);
   position: fixed;
   right: calc(27.5vw + 3px);
-  top: calc(5vh + 3px);
+  top: calc(6rem + 3px);
   transition: all 150ms ease-in-out;
   cursor: pointer;
 }

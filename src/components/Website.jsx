@@ -7,20 +7,32 @@ import { languages } from '../js/languages'
 
 export default function Website() {
 
+    const [isDarkMode, setIsDarkMode] = useState(!false);
+
     const [currentLanguage, setCurrentLanguage] = useState('eng');
 
-    const [isFormDisplayed, setIsFormDisplayed] = useState(false)
+    const [isFormDisplayed, setIsFormDisplayed] = useState(false);
 
-    function showForm() {
-        setIsFormDisplayed(true)
-    }
-    function hideForm() {
-        setIsFormDisplayed(false)
+    function switchDarkModeOnOff(mode) {
+        if (mode === 'on') {
+            setIsDarkMode(true);
+        }
+        if (mode === 'off') {
+            setIsDarkMode(false);
+        }
     }
 
     function changeCurrentLanguage(lang) {
         setCurrentLanguage(lang);
         console.log(currentLanguage);
+    }
+
+    function showForm() {
+        setIsFormDisplayed(true)
+    }
+
+    function hideForm() {
+        setIsFormDisplayed(false)
     }
 
     return (
@@ -32,6 +44,8 @@ export default function Website() {
                         path='/portfolio'
                         element={
                             <Home
+                                isDarkMode={isDarkMode}
+                                switchDarkModeOnOff={switchDarkModeOnOff}
                                 isFormDisplayed={isFormDisplayed}
                                 showForm={showForm}
                                 hideForm={hideForm}
@@ -51,6 +65,7 @@ export default function Website() {
             </main>
             <footer>
                 <GetInTouch
+                    isDarkMode={isDarkMode}
                     showForm={showForm}
                     languages={languages}
                     currentLanguage={currentLanguage}

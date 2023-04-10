@@ -5,6 +5,7 @@
   margin-left: auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  transition: background-color 250ms ease-in-out;
 }
 .section .section-header {
   display: flex;
@@ -39,9 +40,10 @@
   height: 100%;
 }
 .section .section-main .page .box .box-main .description {
-  width: 50%;
+  width: 80%;
   font-size: 1.075rem;
   line-height: 1.35rem;
+  transition: color 250ms ease-in-out;
 }
 .section .section-main .page .box .box-main .description .strong {
   font-weight: 550;

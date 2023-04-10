@@ -4,13 +4,10 @@ import { BsSun as IconBrightMode } from 'react-icons/bs';
 import { languages } from '../js/languages'
 
 export default function Language_Switch(props) {
-
-    console.log(props.currentLanguage)
-
     return (
         <nav className='language-switch'>
-            <IconBrightMode className='icon' />
-            <IconDarkMode className='icon' />
+            <IconBrightMode className='icon' onClick={() => props.switchDarkModeOnOff('off')} />
+            <IconDarkMode className='icon' onClick={() => props.switchDarkModeOnOff('on')} />
             <ul>
                 {languages.languages.map((language, index) => {
                     return (

@@ -6,6 +6,7 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     //max-width: 1500px;
+    transition: background-color 250ms ease-in-out;
 
     .section-header {
         display: flex;
@@ -50,9 +51,10 @@
                     //background-color: blueviolet;
 
                     .description {
-                        width: 50%;
+                        width: 80%;
                         font-size: 1.075rem;
                         line-height: 1.35rem;
+                        transition: color 250ms ease-in-out;
 
                         .strong {
                             font-weight: 550;

@@ -5,7 +5,7 @@ import SocialLinks from './Links_Social'
 
 export default function GetInTouch(props) {
     return (
-        <section className='get-in-touch'>
+        <section className={`get-in-touch ${props.isDarkMode ? 'dark-mode' : ''}`}>
             <div className='box text-box'>
                 <section className='top-box'>
                     <h2 className='my-name'>
@@ -14,7 +14,7 @@ export default function GetInTouch(props) {
                     <h3 className='my-title'>
                         {props.languages.my_title[props.currentLanguage]}
                     </h3>
-                    <p>
+                    <p className='section-title'>
                         {props.languages.get_in_touch.title[props.currentLanguage]}
                     </p>
                     <ContactLinks showForm={props.showForm} />

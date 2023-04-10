@@ -1,4 +1,5 @@
 $formWidth: 45vw;
+$formOffsetFromTop: 6rem;
 
 .contact {
     width: $formWidth;
@@ -7,7 +8,7 @@ $formWidth: 45vw;
     background-color: gray;
     position: fixed;
     left: calc((100vw - $formWidth)/2);
-    top: 5vh;
+    top: $formOffsetFromTop;
     z-index: 11;
     *display: none;
     overflow: scroll;
@@ -25,7 +26,7 @@ $formWidth: 45vw;
             color: rgba(0, 0, 0, 0.7);
             position: fixed;
             right: calc((100vw - $formWidth)/2 + 3px);
-            top: calc(5vh + 3px);
+            top: calc($formOffsetFromTop + 3px);
             transition: all 150ms ease-in-out;
             cursor: pointer;
         }

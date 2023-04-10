@@ -1,0 +1,35 @@
+.dark-mode .section {
+  background-color: black;
+}
+.dark-mode .section h2 {
+  color: rgb(133, 133, 133);
+}
+.dark-mode .section h3 {
+  color: rgb(133, 133, 133);
+}
+.dark-mode .section .section-header h3 {
+  color: rgb(82, 161, 229);
+  color: rgb(187, 187, 187);
+}
+.dark-mode .section .description {
+  color: rgb(82, 161, 229);
+}
+.dark-mode .section .links .icon {
+  color: white;
+}
+.dark-mode .section .links .icon:hover {
+  color: red;
+  scale: 1.2;
+}
+.dark-mode .section .box-footer .icon {
+  color: white !important;
+}
+.dark-mode .section .box-footer .icon:hover {
+  color: red !important;
+}
+.dark-mode .showcase {
+  background-color: rgb(133, 133, 133);
+}
+.dark-mode .showcase h2 {
+  color: rgb(82, 161, 229);
+}/*# sourceMappingURL=dark-mode.css.map */

@@ -1,0 +1,54 @@
+.dark-mode {
+
+    .section {
+        background-color: black;
+
+        h2 {
+            color: rgb(133, 133, 133);
+        }
+
+        h3 {
+            color: rgb(133, 133, 133);
+        }
+
+        .section-header {
+            h3 {
+                color: rgb(82, 161, 229);
+                color: rgb(187, 187, 187);
+            }
+
+
+        }
+
+        .description {
+            color: rgb(82, 161, 229);
+        }
+
+        .links .icon {
+            color: white;
+        }
+
+        .links .icon:hover {
+            color: red;
+            scale: 1.2;
+        }
+
+        .box-footer {
+            .icon {
+                color: white !important;
+            }
+
+            .icon:hover {
+                color: red !important;
+            }
+        }
+    }
+
+    .showcase {
+        background-color: rgb(133, 133, 133);
+
+        h2 {
+            color: rgb(82, 161, 229);
+        }
+    }
+}

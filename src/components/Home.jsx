@@ -8,7 +8,7 @@ import YouTubeVideos from './My_YouTube_Videos'
 import UsedTechs from './Section_Used_Techs'
 import InterestingThings from './My_Interesting_Things'
 import MyProjects from './Section_My_Projects'
-import LanguageSwitch from './Language_Switch'
+import Switches from './Switches'
 
 /*As I found programing and web development fare more interesting than mechanical engineering,
 I switched to web development from mechanical engineering. This is how I become a Frontend Web Developer.
@@ -24,13 +24,14 @@ SASS</strong >, but I can work at the back - end with <strong>NodeJS, MongoDB, A
 
 export default function Home(props) {
     return (
-        <>
+        <div className={`${props.isDarkMode ? 'dark-mode' : ''}`}>
             <ContactForm
                 isFormDisplayed={props.isFormDisplayed}
                 showForm={props.showForm}
                 hideForm={props.hideForm}
             />
-            <LanguageSwitch
+            <Switches
+                switchDarkModeOnOff={props.switchDarkModeOnOff}
                 currentLanguage={props.currentLanguage}
                 changeCurrentLanguage={props.changeCurrentLanguage}
             />
@@ -64,7 +65,7 @@ export default function Home(props) {
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />
-        </>
+        </div>
     )
 }
 
