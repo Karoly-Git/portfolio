@@ -1,0 +1,56 @@
+.links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  /*li:hover .icon {
+      transform: rotateY(calc(2* 360deg));
+  }*/
+}
+.links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links li:not(.links li:last-child) {
+  margin-right: 1.25rem;
+}
+.links a,
+.links span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.links a .icon,
+.links span .icon {
+  font-size: 1.5rem;
+  color: #343a40;
+  color: rgb(220, 229, 236);
+  transition: all 150ms ease-in-out !important;
+  /*transition: transform 1000ms ease-in-out;*/
+}
+.links a .icon:hover,
+.links span .icon:hover {
+  scale: 1.25;
+}
+.links a .github-icon:hover,
+.links span .github-icon:hover {
+  color: #FF9900;
+}
+.links a .linkedin-icon:hover,
+.links span .linkedin-icon:hover {
+  color: #0A66C2;
+}
+.links a .youtube-icon:hover,
+.links span .youtube-icon:hover {
+  color: red;
+}
+.links a .contact-icon:hover,
+.links span .contact-icon:hover {
+  color: red;
+}/*# sourceMappingURL=links.css.map */

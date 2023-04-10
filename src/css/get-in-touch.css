@@ -1,0 +1,66 @@
+.get-in-touch {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.get-in-touch .box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.get-in-touch .top-box {
+  color: white;
+}
+.get-in-touch .top-box p {
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: "Oooh Baby", cursive;
+  font-family: "Mina", sans-serif;
+  color: white;
+}
+.get-in-touch .bottom-box {
+  display: flex;
+  justify-content: flex-end;
+}
+.get-in-touch .bottom-box .contact-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 1rem;
+  width: 50%;
+}
+.get-in-touch .bottom-box .contact-list .my-email:hover {
+  color: red;
+}
+.get-in-touch .bottom-box .contact-list li {
+  margin-bottom: 1rem;
+}
+.get-in-touch .bottom-box .contact-list li h2 {
+  margin-bottom: 0.25rem;
+}
+.get-in-touch .bottom-box .contact-list li a {
+  text-decoration: none;
+}
+.get-in-touch .bottom-box .contact-list li h2,
+.get-in-touch .bottom-box .contact-list li a,
+.get-in-touch .bottom-box .contact-list li div {
+  color: rgb(220, 229, 236);
+}
+.get-in-touch .text-box {
+  background-color: black;
+  padding: 2rem;
+}
+.get-in-touch .text-box .my-name {
+  font-size: 1.5rem;
+  color: rgb(220, 229, 236);
+}
+.get-in-touch .text-box .my-title {
+  font-style: italic;
+}
+.get-in-touch .img-box {
+  background-image: url("../img/img-1.jpg");
+  background-position: center;
+  background-size: cover;
+}/*# sourceMappingURL=get-in-touch.css.map */

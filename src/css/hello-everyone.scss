@@ -1,0 +1,130 @@
+.hello-everyone {
+
+    //background-color: red;
+    //border: 5px solid black;
+
+    //padding-top: calc(42px + 3rem);
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgba(60, 60, 60, 0.7);
+        color: white;
+        position: absolute;
+        top: 225px;
+        padding: 1rem 0 1rem calc(400px + 2rem);
+        //padding: 2rem;
+        width: 100%;
+
+        h3 {
+            font-family: "Mina", sans-serif;
+            font-size: 2rem;
+            //margin-bottom: 0.5rem;
+        }
+
+        h3:nth-child(2) {
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .icon:hover {
+            color: black;
+            scale: 1;
+        }
+    }
+
+    .section-main {
+        //border: 5px solid black;
+
+        .box:first-child {
+            padding: 0;
+            background-color: rgba(60, 60, 60, 0.7);
+            width: 400px;
+            min-width: 400px;
+
+            .box-main {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                //background-color: red;
+
+                .photobox {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 250px;
+                    height: 250px;
+                    background-color: white;
+                    margin-top: calc(135px);
+                    z-index: 10;
+                    padding: 1rem;
+                    background-color: rgba(150, 150, 150);
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    color: white;
+                    margin-bottom: 3rem;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        font-family: "Mina", sans-serif;
+                        font-size: 1.35rem;
+                    }
+                }
+            }
+
+        }
+
+        .box:nth-child(2) {
+            padding: 0;
+            width: 100%;
+            //background-color: red;
+            background-image: url('../img/svg/globe-no-bg.svg');
+            background-position: center;
+            background-size: cover;
+            //border: 5px solid black;
+
+            .box-header {
+                display: flex;
+                align-items: center;
+                //border: 5px solid black;
+                min-height: 8rem;
+
+                h3 {
+                    font-size: 4rem;
+                    font-weight: 100;
+                    font-family: "Mina", sans-serif;
+                    padding-left: 2rem;
+                }
+            }
+
+            .box-main {
+                min-height: 22rem;
+                //width: 100vw;
+                //border: 5px solid black;
+            }
+
+            .box-footer {
+                display: flex;
+                align-items: center;
+                padding-left: 2rem;
+                //border: 5px solid black;
+                height: 8rem;
+
+                .icon {
+                    color: black;
+                }
+
+                .icon:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+}

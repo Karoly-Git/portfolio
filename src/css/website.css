@@ -1,0 +1,20 @@
+@import './fonts.css';
+@import './reset.css';
+@import './language-switch.css';
+@import './section.css';
+@import './show-case.css';
+@import './maintenance.css';
+@import './contact.css';
+@import './hello-everyone.css';
+@import './about-me.css';
+@import './get-in-touch.css';
+/*-----------------------------------*/
+@import './buttons.css';
+@import './grids.css';
+@import './links.css';
+@import './pagination.css';
+/*
+$textColor: #343a40;
+$linkColor: goldenrod;
+$linkHoverColor: #1e7ba2;
+*//*# sourceMappingURL=website.css.map */

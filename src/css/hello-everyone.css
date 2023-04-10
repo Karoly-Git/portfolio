@@ -1,0 +1,92 @@
+.hello-everyone .section-header {
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(60, 60, 60, 0.7);
+  color: white;
+  position: absolute;
+  top: 225px;
+  padding: 1rem 0 1rem calc(400px + 2rem);
+  width: 100%;
+}
+.hello-everyone .section-header h3 {
+  font-family: "Mina", sans-serif;
+  font-size: 2rem;
+}
+.hello-everyone .section-header h3:nth-child(2) {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.hello-everyone .section-header .icon:hover {
+  color: black;
+  scale: 1;
+}
+.hello-everyone .section-main .box:first-child {
+  padding: 0;
+  background-color: rgba(60, 60, 60, 0.7);
+  width: 400px;
+  min-width: 400px;
+}
+.hello-everyone .section-main .box:first-child .box-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hello-everyone .section-main .box:first-child .box-main .photobox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  margin-top: 135px;
+  z-index: 10;
+  padding: 1rem;
+  background-color: rgb(150, 150, 150);
+}
+.hello-everyone .section-main .box:first-child .box-main .photobox img {
+  width: 100%;
+}
+.hello-everyone .section-main .box:first-child .box-main ul {
+  list-style: none;
+  color: white;
+  margin-bottom: 3rem;
+}
+.hello-everyone .section-main .box:first-child .box-main ul li {
+  display: flex;
+  align-items: center;
+  font-family: "Mina", sans-serif;
+  font-size: 1.35rem;
+}
+.hello-everyone .section-main .box:nth-child(2) {
+  padding: 0;
+  width: 100%;
+  background-image: url("../img/svg/globe-no-bg.svg");
+  background-position: center;
+  background-size: cover;
+}
+.hello-everyone .section-main .box:nth-child(2) .box-header {
+  display: flex;
+  align-items: center;
+  min-height: 8rem;
+}
+.hello-everyone .section-main .box:nth-child(2) .box-header h3 {
+  font-size: 4rem;
+  font-weight: 100;
+  font-family: "Mina", sans-serif;
+  padding-left: 2rem;
+}
+.hello-everyone .section-main .box:nth-child(2) .box-main {
+  min-height: 22rem;
+}
+.hello-everyone .section-main .box:nth-child(2) .box-footer {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  height: 8rem;
+}
+.hello-everyone .section-main .box:nth-child(2) .box-footer .icon {
+  color: black;
+}
+.hello-everyone .section-main .box:nth-child(2) .box-footer .icon:hover {
+  color: red;
+}/*# sourceMappingURL=hello-everyone.css.map */

@@ -1,0 +1,45 @@
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: height 350ms ease-in-out;
+
+    .front-box {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 5rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem 2rem;
+
+        h2 {
+            color: white;
+            font-size: 2rem;
+            margin: 0 1rem;
+        }
+
+
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: white;
+        *overflow: scroll;
+    }
+}
+
+.open {
+    height: 19rem;
+}
+
+.up {
+    transform: rotateZ(180deg) !important;
+}

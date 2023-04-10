@@ -1,0 +1,57 @@
+.links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li:not(.links li:last-child) {
+        margin-right: 1.25rem;
+    }
+
+    /*li:hover .icon {
+        transform: rotateY(calc(2* 360deg));
+    }*/
+
+    a,
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        user-select: none;
+        cursor: pointer;
+
+        .icon {
+            font-size: 1.5rem;
+            color: #343a40;
+            color: rgb(220, 229, 236);
+            transition: all 150ms ease-in-out !important;
+            /*transition: transform 1000ms ease-in-out;*/
+        }
+
+        .icon:hover {
+            scale: 1.25;
+        }
+
+        .github-icon:hover {
+            color: #FF9900;
+        }
+
+        .linkedin-icon:hover {
+            color: #0A66C2;
+        }
+
+        .youtube-icon:hover {
+            color: red;
+        }
+
+        .contact-icon:hover {
+            color: red;
+        }
+    }
+}

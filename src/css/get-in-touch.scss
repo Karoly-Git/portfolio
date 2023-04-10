@@ -1,0 +1,81 @@
+  .get-in-touch {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+
+      .box {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+      }
+
+      .top-box {
+          color: white;
+
+          p {
+              font-size: 4rem;
+              font-weight: 600;
+              text-transform: uppercase;
+              letter-spacing: 4px;
+              font-family: 'Oooh Baby', cursive;
+              font-family: 'Mina', sans-serif;
+              color: white;
+          }
+
+      }
+
+      .bottom-box {
+          display: flex;
+          justify-content: flex-end;
+
+          .contact-list {
+              display: flex;
+              flex-direction: column;
+              list-style: none;
+              padding: 1rem;
+              width: 50%;
+
+              .my-email:hover {
+                  color: red;
+              }
+
+              li {
+                  margin-bottom: 1rem;
+
+                  h2 {
+                      margin-bottom: 0.25rem;
+                  }
+
+                  a {
+                      text-decoration: none;
+                  }
+
+                  h2,
+                  a,
+                  div {
+                      color: rgb(220, 229, 236);
+                  }
+              }
+          }
+      }
+
+      .text-box {
+          background-color: black;
+          padding: 2rem;
+
+          .my-name {
+              font-size: 1.5rem;
+              color: rgb(220, 229, 236);
+          }
+
+          .my-title {
+              font-style: italic;
+          }
+      }
+
+      .img-box {
+          background-image: url('../img/img-1.jpg');
+          background-position: center;
+          background-size: cover;
+      }
+  }

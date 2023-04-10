@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+body {
+  background-color: rgb(240, 239, 242);
+}
+
+.maintenance {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.maintenance * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.maintenance iframe {
+  border: none;
+  outline: none;
+}
+.maintenance .server-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+  overflow: hidden;
+  margin: 2rem 0;
+  width: 100%;
+}
+.maintenance .server-giphy {
+  height: 80px;
+  width: 80px;
+  pointer-events: none;
+  margin-top: 8px;
+}
+.maintenance .container {
+  display: flex;
+  justify-content: center;
+}
+.maintenance .img-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.maintenance .logo {
+  height: 150px;
+}
+.maintenance .tool-giphy {
+  width: 150px;
+  height: 150px;
+  pointer-events: none;
+}
+.maintenance .text-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.maintenance h2 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.maintenance p {
+  max-width: 200px;
+}
+.maintenance .contact-box {
+  display: flex;
+  width: 100%;
+}
+.maintenance .icon {
+  margin-right: 1rem;
+  color: darkblue;
+  font-size: 2rem;
+}
+.maintenance .phone-icon {
+  transform: rotateY(180deg);
+}
+.maintenance .date-container {
+  display: flex;
+  flex-direction: column;
+}
+.maintenance h3 {
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+  font-size: 0.8rem !important;
+  margin-bottom: 0.5rem !important;
+  padding: 0 1rem;
+}
+.maintenance h3:last-child {
+  margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 830px) {
+  .date-containet {
+    align-items: center;
+  }
+  .img-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+  .text-box {
+    padding: 2rem !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .maintenance {
+    width: 100%;
+  }
+  .server-box {
+    margin: 0;
+  }
+  .server-box:last-child {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .top-container {
+    flex-direction: column;
+  }
+  .img-box {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+  .logo,
+.tool-giphy {
+    width: 100px;
+    height: 100px;
+  }
+  .text-box {
+    padding: 0 !important;
+    align-items: center;
+  }
+  .contact-box {
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  h2 {
+    margin: 0;
+    margin-bottom: 1rem !important;
+    font-size: 1.5rem !important;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+  p {
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .logo,
+.tool-giphy {
+    width: 50px;
+    height: 50px;
+  }
+  h2 {
+    margin-top: 1rem;
+  }
+  h3 {
+    font-size: 0.65rem !important;
+  }
+}/*# sourceMappingURL=maintenance.css.map */

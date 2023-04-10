@@ -1,0 +1,13 @@
+.pagination {
+  display: flex;
+  *border: 10px solid red;
+  margin: 0 4rem;
+}
+.pagination .sub-pages {
+  margin: 0 1rem;
+  display: flex;
+  list-style: none;
+}
+.pagination .sub-pages li:not(li:last-child) {
+  margin-right: 1rem;
+}/*# sourceMappingURL=pagination.css.map */

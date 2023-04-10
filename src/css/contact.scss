@@ -1,0 +1,115 @@
+$formWidth: 45vw;
+
+.contact {
+    width: $formWidth;
+    max-height: 90vh;
+    padding: 2rem;
+    background-color: gray;
+    position: fixed;
+    left: calc((100vw - $formWidth)/2);
+    top: 5vh;
+    z-index: 11;
+    *display: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    outline: 5px solid rgb(100, 100, 100);
+
+    .headline-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+
+        .close-btn {
+            font-size: 1.5rem;
+            color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            right: calc((100vw - $formWidth)/2 + 3px);
+            top: calc(5vh + 3px);
+            transition: all 150ms ease-in-out;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: white;
+            background-color: darkred;
+        }
+    }
+
+    p {
+        margin: 1rem 0;
+        color: white;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        border-radius: 3px;
+        border: 2px solid rgba(52, 58, 64, 0.5);
+    }
+
+    textarea {
+        width: 100%;
+        height: 8rem;
+        min-height: 3rem;
+        padding: 0.75rem 1rem;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        border-radius: 3px;
+        resize: vertical;
+        border: 2px solid rgba(52, 58, 64, 0.5);
+    }
+
+    button {
+        border: none;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        font-size: 1rem;
+        color: white;
+        background-color: #343a40;
+        letter-spacing: 2px;
+        transition: color 100ms ease-in;
+        user-select: none;
+        cursor: pointer;
+        border: 1px solid white;
+
+        .send-icon {
+            margin-right: 0.5rem;
+        }
+    }
+
+    button:hover {
+        color: #27aae2;
+    }
+
+    .error {
+        display: inline-block;
+        background-color: red;
+        padding: 0.25rem 1rem;
+        color: azure !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .contact {
+        *background-color: rgba(245, 245, 220, 0.35);
+        *border: 2px solid rgba(52, 58, 64, 0.25);
+    }
+
+    .headline,
+    p {
+        *color: white !important;
+    }
+}
+
+.form-is-hidden {
+    display: none;
+}

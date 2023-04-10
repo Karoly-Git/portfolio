@@ -1,0 +1,103 @@
+.contact {
+  width: 45vw;
+  max-height: 90vh;
+  padding: 2rem;
+  background-color: gray;
+  position: fixed;
+  left: 27.5vw;
+  top: 5vh;
+  z-index: 11;
+  *display: none;
+  overflow: scroll;
+  overflow-x: hidden;
+  outline: 5px solid rgb(100, 100, 100);
+}
+.contact .headline-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.contact .headline-box .close-btn {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  right: calc(27.5vw + 3px);
+  top: calc(5vh + 3px);
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+.contact .headline-box .close-btn:hover {
+  color: white;
+  background-color: darkred;
+}
+.contact p {
+  margin: 1rem 0;
+  color: white;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+.contact input {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: 2px solid rgba(52, 58, 64, 0.5);
+}
+.contact textarea {
+  width: 100%;
+  height: 8rem;
+  min-height: 3rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  resize: vertical;
+  border: 2px solid rgba(52, 58, 64, 0.5);
+}
+.contact button {
+  border: none;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  background-color: #343a40;
+  letter-spacing: 2px;
+  transition: color 100ms ease-in;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  border: 1px solid white;
+}
+.contact button .send-icon {
+  margin-right: 0.5rem;
+}
+.contact button:hover {
+  color: #27aae2;
+}
+.contact .error {
+  display: inline-block;
+  background-color: red;
+  padding: 0.25rem 1rem;
+  color: azure !important;
+  font-size: 1rem !important;
+}
+
+@media only screen and (min-width: 550px) {
+  .contact {
+    *background-color: rgba(245, 245, 220, 0.35);
+    *border: 2px solid rgba(52, 58, 64, 0.25);
+  }
+  .headline,
+p {
+    *color: white !important;
+  }
+}
+.form-is-hidden {
+  display: none;
+}/*# sourceMappingURL=contact.css.map */

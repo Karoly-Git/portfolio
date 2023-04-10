@@ -1,0 +1,51 @@
+.language-switch {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    user-select: none;
+    //top: 1rem;
+    //right: 1rem;
+    background-color: rgba(255, 165, 0, 1);
+    background-color: rgb(240, 239, 242);
+    z-index: 20;
+    padding: 0.5rem 1rem;
+
+    .icon {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+        color: gray;
+        cursor: pointer;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin-left: 0.5rem;
+
+        li {
+            padding: 0.25rem;
+            cursor: pointer;
+            transition: all 150ms ease-in-out;
+        }
+
+        li:not(li:last-child) {
+            margin-right: 0.5rem;
+        }
+
+        li:hover {
+            background-color: rgba(128, 128, 128, 0.5);
+            //color: white;
+        }
+    }
+
+    .current-language {
+        background-color: gray;
+        color: white;
+    }
+
+    .current-language:hover {
+        background-color: gray;
+    }
+}

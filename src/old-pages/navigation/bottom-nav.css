@@ -1,0 +1,33 @@
+.bottom-nav .contacts {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.bottom-nav .contacts li:not(li:last-child) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+.bottom-nav .contacts li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  color: azure;
+}
+.bottom-nav .contacts li a .contact-icon {
+  font-size: 2rem;
+}
+.bottom-nav .contacts li:first-child a:hover {
+  color: #F7DF1E;
+}
+.bottom-nav .contacts li:nth-child(2) a:hover {
+  color: #25D366;
+}
+.bottom-nav .contacts li:nth-child(3) a:hover {
+  color: #EA4335;
+}/*# sourceMappingURL=bottom-nav.css.map */

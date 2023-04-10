@@ -1,0 +1,44 @@
+.language-switch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: rgb(255, 165, 0);
+  background-color: rgb(240, 239, 242);
+  z-index: 20;
+  padding: 0.5rem 1rem;
+}
+.language-switch .icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: gray;
+  cursor: pointer;
+}
+.language-switch ul {
+  display: flex;
+  list-style: none;
+  margin-left: 0.5rem;
+}
+.language-switch ul li {
+  padding: 0.25rem;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.language-switch ul li:not(li:last-child) {
+  margin-right: 0.5rem;
+}
+.language-switch ul li:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+.language-switch .current-language {
+  background-color: gray;
+  color: white;
+}
+.language-switch .current-language:hover {
+  background-color: gray;
+}/*# sourceMappingURL=language-switch.css.map */

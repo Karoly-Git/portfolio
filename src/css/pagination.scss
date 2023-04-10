@@ -1,0 +1,15 @@
+.pagination {
+    display: flex;
+    *border: 10px solid red;
+    margin: 0 4rem;
+
+    .sub-pages {
+        margin: 0 1rem;
+        display: flex;
+        list-style: none;
+
+        li:not(li:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}

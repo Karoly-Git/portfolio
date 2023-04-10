@@ -1,0 +1,105 @@
+.about-me {
+
+    .description {
+        width: 80% !important;
+    }
+
+    .section-main {
+        overflow: hidden;
+
+        .page {
+            position: relative;
+            min-width: 100%;
+            transition: left 1s ease-in-out;
+            left: 0;
+
+        }
+
+        .page-1 {
+            background-color: transparent;
+        }
+
+        .page-2 {
+            background-color: transparent;
+            flex-direction: row-reverse;
+        }
+
+        .moved-to-left {
+            left: -100%;
+        }
+    }
+}
+
+.img-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .img-box {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        background-position: center center;
+        background-size: cover;
+
+        .sub-img-box {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            height: 100%;
+            width: 50%;
+            background-position: center center;
+            background-size: cover;
+
+            div {
+                display: flex;
+                align-items: center;
+                font-family: 'Share Tech', sans-serif;
+                text-transform: uppercase;
+                background-color: rgba(255, 255, 255, 0.8);
+                font-size: 1.5rem;
+                padding: 0 1rem;
+                height: 2.5rem;
+                margin: 0 1rem 1rem 0;
+            }
+        }
+
+        .sub-img-box:not(.sub-img-box:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    .img-box:not(.img-box:first-child) {
+        margin-top: 1rem;
+    }
+
+    .bg-a {
+        align-items: flex-end;
+        background-image: url('../img/img-01.jpg');
+        color: white;
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 0.5rem;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        img {
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+
+    .bg-b {
+        background-image: url('../img/img-02.jpg');
+    }
+
+    .bg-c {
+        background-image: url('../img/img-03.jpg');
+    }
+
+}
