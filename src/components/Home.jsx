@@ -24,13 +24,14 @@ SASS</strong >, but I can work at the back - end with <strong>NodeJS, MongoDB, A
 
 export default function Home(props) {
     return (
-        <div className={`${props.isDarkMode ? 'dark-mode' : ''}`}>
+        <>
             <ContactForm
                 isFormDisplayed={props.isFormDisplayed}
                 showForm={props.showForm}
                 hideForm={props.hideForm}
             />
             <Switches
+                isDarkMode={props.isDarkMode}
                 switchDarkModeOnOff={props.switchDarkModeOnOff}
                 currentLanguage={props.currentLanguage}
                 changeCurrentLanguage={props.changeCurrentLanguage}
@@ -65,7 +66,7 @@ export default function Home(props) {
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />
-        </div>
+        </>
     )
 }
 

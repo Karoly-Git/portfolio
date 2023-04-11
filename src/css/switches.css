@@ -1,4 +1,4 @@
-.language-switch {
+.switches {
   width: 100%;
   display: flex;
   align-items: center;
@@ -13,32 +13,35 @@
   z-index: 20;
   padding: 0.5rem 1rem;
 }
-.language-switch .icon {
+.switches .icon {
   font-size: 1.5rem;
   margin-right: 0.5rem;
   color: gray;
   cursor: pointer;
 }
-.language-switch ul {
+.switches .icon:hover {
+  color: black;
+}
+.switches ul {
   display: flex;
   list-style: none;
   margin-left: 0.5rem;
 }
-.language-switch ul li {
+.switches ul li {
   padding: 0.25rem;
   cursor: pointer;
   transition: all 150ms ease-in-out;
 }
-.language-switch ul li:not(li:last-child) {
+.switches ul li:not(li:last-child) {
   margin-right: 0.5rem;
 }
-.language-switch ul li:hover {
+.switches ul li:hover {
   background-color: rgba(128, 128, 128, 0.5);
 }
-.language-switch .current-language {
+.switches .current-language {
   background-color: gray;
   color: white;
 }
-.language-switch .current-language:hover {
+.switches .current-language:hover {
   background-color: gray;
-}/*# sourceMappingURL=language-switch.css.map */
+}/*# sourceMappingURL=switches.css.map */

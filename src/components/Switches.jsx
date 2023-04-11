@@ -3,11 +3,11 @@ import { MdNightlightRound as IconDarkMode } from 'react-icons/md';
 import { BsSun as IconBrightMode } from 'react-icons/bs';
 import { languages } from '../js/languages'
 
-export default function Language_Switch(props) {
+export default function Switches(props) {
     return (
-        <nav className='language-switch'>
-            <IconBrightMode className='icon' onClick={() => props.switchDarkModeOnOff('off')} />
-            <IconDarkMode className='icon' onClick={() => props.switchDarkModeOnOff('on')} />
+        <nav className='switches'>
+            {props.isDarkMode && <IconBrightMode className='icon' onClick={() => props.switchDarkModeOnOff('off')} />}
+            {!props.isDarkMode && <IconDarkMode className='icon' onClick={() => props.switchDarkModeOnOff('on')} />}
             <ul>
                 {languages.languages.map((language, index) => {
                     return (

@@ -1,3 +1,19 @@
+.dark-mode .switches {
+  background-color: black;
+}
+.dark-mode .switches .icon {
+  color: rgb(187, 187, 187);
+}
+.dark-mode .switches .icon:hover {
+  color: white;
+}
+.dark-mode .switches ul li {
+  color: white;
+  color: rgb(187, 187, 187);
+}
+.dark-mode .switches .current-language {
+  color: black;
+}
 .dark-mode .section {
   background-color: black;
 }
@@ -27,9 +43,16 @@
 .dark-mode .section .box-footer .icon:hover {
   color: red !important;
 }
+.dark-mode .section .sub-img-box div {
+  background-color: rgb(133, 133, 133);
+  color: black;
+}
 .dark-mode .showcase {
   background-color: rgb(133, 133, 133);
 }
 .dark-mode .showcase h2 {
-  color: rgb(82, 161, 229);
+  color: rgb(187, 187, 187);
+}
+.dark-mode .get-in-touch {
+  border-bottom: 5rem solid rgb(20, 20, 20);
 }/*# sourceMappingURL=dark-mode.css.map */

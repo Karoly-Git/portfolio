@@ -7,7 +7,7 @@ import { languages } from '../js/languages'
 
 export default function Website() {
 
-    const [isDarkMode, setIsDarkMode] = useState(!false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     const [currentLanguage, setCurrentLanguage] = useState('eng');
 
@@ -37,40 +37,42 @@ export default function Website() {
 
     return (
         <Router>
-            <header></header>
-            <main>
-                <Routes>
-                    <Route
-                        path='/portfolio'
-                        element={
-                            <Home
-                                isDarkMode={isDarkMode}
-                                switchDarkModeOnOff={switchDarkModeOnOff}
-                                isFormDisplayed={isFormDisplayed}
-                                showForm={showForm}
-                                hideForm={hideForm}
-                                languages={languages}
-                                currentLanguage={currentLanguage}
-                                changeCurrentLanguage={changeCurrentLanguage}
-                            />
-                        }
+            <div className={`${isDarkMode ? 'dark-mode' : ''}`}>
+                <header></header>
+                <main>
+                    <Routes>
+                        <Route
+                            path='/portfolio'
+                            element={
+                                <Home
+                                    isDarkMode={isDarkMode}
+                                    switchDarkModeOnOff={switchDarkModeOnOff}
+                                    isFormDisplayed={isFormDisplayed}
+                                    showForm={showForm}
+                                    hideForm={hideForm}
+                                    languages={languages}
+                                    currentLanguage={currentLanguage}
+                                    changeCurrentLanguage={changeCurrentLanguage}
+                                />
+                            }
+                        />
+                        <Route
+                            path='*'
+                            element={
+                                <h1>Page not found</h1>
+                            }
+                        />
+                    </Routes>
+                </main>
+                <footer>
+                    <GetInTouch
+                        isDarkMode={isDarkMode}
+                        showForm={showForm}
+                        languages={languages}
+                        currentLanguage={currentLanguage}
                     />
-                    <Route
-                        path='*'
-                        element={
-                            <h1>Page not found</h1>
-                        }
-                    />
-                </Routes>
-            </main>
-            <footer>
-                <GetInTouch
-                    isDarkMode={isDarkMode}
-                    showForm={showForm}
-                    languages={languages}
-                    currentLanguage={currentLanguage}
-                />
-            </footer>
+                </footer>
+            </div>
         </Router>
     )
 }

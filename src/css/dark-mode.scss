@@ -1,5 +1,29 @@
 .dark-mode {
 
+    .switches {
+        background-color: black;
+
+        .icon {
+            color: rgb(187, 187, 187);
+        }
+
+        .icon:hover {
+            color: white;
+        }
+
+        ul {
+            li {
+                color: white;
+                color: rgb(187, 187, 187);
+            }
+        }
+
+        .current-language {
+            color: black;
+        }
+
+    }
+
     .section {
         background-color: black;
 
@@ -42,13 +66,22 @@
                 color: red !important;
             }
         }
+
+        .sub-img-box div {
+            background-color: rgb(133, 133, 133);
+            color: black;
+        }
     }
 
     .showcase {
         background-color: rgb(133, 133, 133);
 
         h2 {
-            color: rgb(82, 161, 229);
+            color: rgb(187, 187, 187);
         }
+    }
+
+    .get-in-touch {
+        border-bottom: 5rem solid rgb(20, 20, 20);
     }
 }
