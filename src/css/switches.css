@@ -12,6 +12,7 @@
   background-color: rgb(240, 239, 242);
   z-index: 20;
   padding: 0.5rem 1rem;
+  transition: background-color 250ms ease-in-out;
 }
 .switches .icon {
   font-size: 1.5rem;

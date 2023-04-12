@@ -111,4 +111,31 @@
 
 .large {
   scale: 1.3;
+}
+
+.scroll-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(150, 150, 150);
+  width: 1.75rem;
+  height: 2.5rem;
+  color: white;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 2rem;
+  right: -1.75rem;
+  right: 0;
+  border-radius: 0.65rem 0 0 0.65rem;
+  cursor: pointer;
+  z-index: 1010;
+  transition: all 200ms ease-in-out;
+  color: black;
+}
+.scroll-to-top .icon {
+  transform: rotateZ(180deg);
+}
+
+.scroll-to-top:hover {
+  color: white;
 }/*# sourceMappingURL=buttons.css.map */

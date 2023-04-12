@@ -10,6 +10,10 @@ import InterestingThings from './My_Interesting_Things'
 import MyProjects from './Section_My_Projects'
 import Switches from './Switches'
 
+import ScrollToTop from 'react-scroll-to-top';
+import { MdExpandMore as IconMore } from 'react-icons/md';
+
+
 /*As I found programing and web development fare more interesting than mechanical engineering,
 I switched to web development from mechanical engineering. This is how I become a Frontend Web Developer.
 My main strength is the < strong > responsive design</strong > using < strong >
@@ -66,6 +70,7 @@ export default function Home(props) {
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />
+            <ScrollToTop smooth component={<IconMore className='icon' />} />
         </>
     )
 }
