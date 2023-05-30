@@ -109,7 +109,7 @@ const data = {
                     labels.NodeJs
                 ],
             projectName: "Barber's shop website",
-            website: "",
+            website: "http://parisbarber.co.uk",
             github: "https://github.com/Karoly-Git",
             description: [],
         },

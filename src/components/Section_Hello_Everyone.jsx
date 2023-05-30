@@ -4,7 +4,7 @@ import ContactLinks from './Links_Contact'
 import SocialLinks from './Links_Social'
 
 import { TfiCheckBox as CheckBoxIcon } from 'react-icons/tfi'
-import helloImage from '../img/svg/js.svg'
+import helloImage from '../img/me1.png'
 
 export default function HelloEveryone(props) {
     return (
