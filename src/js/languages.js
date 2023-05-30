@@ -67,12 +67,23 @@ export const languages = {
             pol: 'Używam kombinacji różnych języków programowania, narzędzi i technologii, aby dostarczać najwyższej jakości usługi tworzenia stron internetowych.'
         },
         p2: {
-            eng: 'I use cutting-edge technologies like React, Node.js, MongoDB, and many others to create modern, responsive, and feature-rich web applications.',
-            hun: 'Az olyan élvonalbeli technológiákat használom, mint a React, Node.js, MongoDB és sok más, hogy modern, érzékeny és funkciókban gazdag webalkalmazásokat készítsek.',
-            pol: 'Wykorzystuję najnowocześniejsze technologie, takie jak React, Node.js, MongoDB i wiele innych, aby tworzyć nowoczesne, responsywne i bogate w funkcje aplikacje internetowe.',
+            eng: 'I use cutting-edge technologies like React.js, Node.js, MongoDB, and many others to create modern, responsive, and feature-rich web applications.',
+            hun: 'Az olyan élvonalbeli technológiákat használom, mint a React.js, Node.js, MongoDB és sok más, hogy modern, érzékeny és funkciókban gazdag webalkalmazásokat készítsek.',
+            pol: 'Wykorzystuję najnowocześniejsze technologie, takie jak React.js, Node.js, MongoDB i wiele innych, aby tworzyć nowoczesne, responsywne i bogate w funkcje aplikacje internetowe.',
         },
         p3: {
             eng: 'With my expertise in these tools, I can help you to achieve your business goals and exceed your expectations.',
+            hun: 'Ezekben az eszközökben szerzett szakértelmemmel segíthetek üzleti céljai elérésében, és túlteljesítheti elvárásait.',
+            pol: 'Dzięki mojej wiedzy na temat tych narzędzi mogę pomóc Ci osiągnąć cele biznesowe i przekroczyć Twoje oczekiwania.',
+        },
+        p4: {
+            eng: `Certainly! Here's a shorter version:
+
+            I specialize in web development and utilize a combination of programming languages, tools, and cutting-edge technologies to deliver top-quality solutions. With expertise in React, Node.js, MongoDB, and more, I create modern, responsive, and feature-rich web applications that exceed expectations.
+            
+            By understanding your business goals, I can help you achieve success by leveraging my knowledge and proficiency in these technologies. Whether you need an e-commerce platform, a content management system, or a custom web application, I have the skills to deliver exceptional results.
+            
+            Let's work together to enhance your online presence, establish a strong digital footprint, and surpass your digital ambitions. Contact me today to discuss how I can help you achieve your goals.`,
             hun: 'Ezekben az eszközökben szerzett szakértelmemmel segíthetek üzleti céljai elérésében, és túlteljesítheti elvárásait.',
             pol: 'Dzięki mojej wiedzy na temat tych narzędzi mogę pomóc Ci osiągnąć cele biznesowe i przekroczyć Twoje oczekiwania.',
         },
@@ -84,7 +95,7 @@ export const languages = {
             pol: 'Moje projekty',
         },
         p1: {
-            eng: 'At this segment, I invite you to explore a selection of my web development jobs, which showcases my proficiency in designing and developing websites with an unwavering commitment to delivering superior outcomes.',
+            eng: 'Now, I invite you to explore some of my web development jobs, which showcases my proficiency in designing and developing websites with an unwavering commitment to delivering superior outcomes.',
             hun: 'Ebben a szegmensben arra kérem Önt, hogy fedezze fel a webfejlesztői munkáim egy részét, amely bemutatja a webhelyek tervezésében és fejlesztésében való jártasságomat, a kiváló eredmények elérése iránti megingathatatlan elkötelezettséggel.',
             pol: 'W tym segmencie zapraszam do zapoznania się z wybranymi moimi ofertami pracy w zakresie tworzenia stron internetowych, które pokazują moją biegłość w projektowaniu i tworzeniu stron internetowych z niezachwianym zaangażowaniem w dostarczanie doskonałych wyników.'
         },
@@ -149,7 +160,7 @@ export const languages = {
                 pol: `Podczas pracy z klientami priorytetowo traktuję podejście oparte na współpracy, które pozwala na otwartą komunikację i informację zwrotną na każdym etapie procesu rozwoju. Zdobywając dogłębne zrozumienie celów biznesowych klienta, docelowych odbiorców i tożsamości marki, jestem w stanie opracować dostosowane rozwiązania internetowe, które są idealnie dopasowane do ich unikalnych potrzeb i celów.`,
             },
             p2: {
-                eng: `Whether you are looking to launch a new web application from scratch or need assistance with upgrading an existing one, I can help you to achieve your business goals. By utilizing the latest web development tools and technologies, I am able to create bespoke solutions that are both visually stunning and highly functional, helping clients to establish a strong online presence and achieve long-term success.`,
+                eng: `Whether launching a new web application from scratch or need assistance with upgrading an existing one, I can help to achieve the business goals. By utilizing the latest web development tools and technologies, I am able to create bespoke solutions that are both visually stunning and highly functional, helping clients to establish a strong online presence and achieve long-term success.`,
                 hun: `Akár egy új webalkalmazást szeretnél indítani, akár segítségre van szükséged egy meglévő frissítéséhez, én mindkettőben segíteni tudok. A legújabb webfejlesztő eszközök és technológiák felhasználásával olyan egyedi megoldásokat tudok létrehozni, amelyek segítenek az erős online jelenlét kialakításában és a hosszú távú sikerek elérésében.`,
                 pol: `Niezależnie od tego, czy chcesz uruchomić nową aplikację internetową od zera, czy potrzebujesz pomocy przy aktualizacji istniejącej, mogę pomóc Ci osiągnąć cele biznesowe. Wykorzystując najnowsze narzędzia i technologie do tworzenia stron internetowych, jestem w stanie tworzyć rozwiązania na zamówienie, które są zarówno oszałamiające wizualnie, jak i wysoce funkcjonalne, pomagając klientom w zaistnieniu w Internecie i osiągnięciu długoterminowego sukcesu.`,
             },

@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
 import MoreBtn from './Btn_More'
+import { BsInfoCircle as InfoIcon } from 'react-icons/bs';
 
 export default function YouTubeVideos(props) {
     const [newIconDirection, setNewIconDirection] = useState('down')
@@ -11,8 +12,8 @@ export default function YouTubeVideos(props) {
     }
 
     return (
-        <div className={`showcase interesting-things ${isShowCaseOpen ? 'open' : ''}`}  >
-            <header className="front-box reverse">
+        <div className={`showcase my-youtube-videos ${isShowCaseOpen ? 'open' : ''}`}  >
+            <header className="front-box reverse-front-box">
                 <MoreBtn
                     iconDirection="down"
                     handleClick={handleClick}
@@ -23,10 +24,11 @@ export default function YouTubeVideos(props) {
                 </h2>
             </header>
             <footer className="content">
+                <InfoIcon className='icon' title="Videos' language is Hungarian" />
                 <iframe src="https://www.youtube.com/embed/z_8kjPVnDPo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                <iframe src="https://www.youtube.com/embed/z_8kjPVnDPo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                <iframe src="https://www.youtube.com/embed/z_8kjPVnDPo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                <iframe src="https://www.youtube.com/embed/z_8kjPVnDPo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </footer>
         </div >
     )

@@ -154,21 +154,7 @@ export default function AboutMe(props) {
                         <header className="box-header"></header>
                         <div className="box-main">
                             <div className="img-container">
-                                <div className="img-box bg-a">
-                                    <div>
-                                        {technologies.map((tech, index) =>
-                                            <img key={tech.name + index} src={tech.svg} alt={tech.name} />
-                                        )}
-                                    </div>
-                                </div>
-                                <div className="img-box">
-                                    <div className="sub-img-box bg-b">
-                                        <div>Client side</div>
-                                    </div>
-                                    <div className="sub-img-box bg-c">
-                                        <div>Server side</div>
-                                    </div>
-                                </div>
+                                <div className="img-box bg-d"></div>
                             </div>
                         </div>
                         <footer className="box-footer"></footer>

@@ -1,4 +1,4 @@
-import { React } from 'react'
+import React, { useState } from 'react'
 
 import ContactForm from './Contact_Form'
 import HelloEveryone from './Section_Hello_Everyone'
@@ -27,6 +27,13 @@ SASS</strong >, but I can work at the back - end with <strong>NodeJS, MongoDB, A
 */
 
 export default function Home(props) {
+
+    const [btnRight, setBtnRight] = useState(-1.75);
+
+    window.addEventListener('scroll', () => {
+        window.scrollY >= 550 ? setBtnRight(0) : setBtnRight(-1.75);
+    });
+
     return (
         <>
             <ContactForm
@@ -70,7 +77,11 @@ export default function Home(props) {
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />
-            <ScrollToTop smooth component={<IconMore className='icon' />} />
+            <ScrollToTop
+                smooth
+                component={<IconMore className='icon' />}
+                style={{ right: `${btnRight}rem` }}
+            />
         </>
     )
 }

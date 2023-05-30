@@ -1,10 +1,7 @@
-import spw from '../img/projects/spw.png';
-import mary from '../img/projects/mary.png';
-import dog from '../img/projects/dog.png';
-import barber from '../img/projects/barber.png';
-import weather from '../img/projects/weather.png';
-import bankHoliday from '../img/projects/bank_holiday.png';
-import uploader from '../img/projects/uploader.png';
+import sparklingWillo from '../img/projects/camera.jpg';
+import maryVarrodaja from '../img/projects/sewing.jpg';
+import parisBarber from '../img/projects/barber.jpg';
+import curtainMaster from '../img/projects/curtain.jpg';
 
 import react from '../img/svg/react.svg'
 import nodejs from '../img/svg/nodejs.svg'
@@ -53,10 +50,10 @@ const data = {
     projects: [
         {
             id: 1,
-            status: 'Life',
+            status: 'Live',
             name: 'Sparkling Willo Photography',
             img: {
-                src: spw,
+                indexSrc: sparklingWillo,
                 alt: 'spw-img',
             },
             labels:
@@ -76,11 +73,11 @@ const data = {
         },
         {
             id: 2,
-            status: 'Life',
+            status: 'Live',
             name: 'Mary Varrodája',
             img: {
-                src: mary,
-                alt: 'mary-img',
+                indexSrc: maryVarrodaja,
+                alt: 'mary-varrodaja-img',
             },
             labels:
                 [
@@ -102,8 +99,8 @@ const data = {
             status: 'In development',
             name: 'Paris Barber',
             img: {
-                src: barber,
-                alt: 'barber-img',
+                indexSrc: parisBarber,
+                alt: 'paris-barber-img',
             },
             labels:
                 [
@@ -118,10 +115,29 @@ const data = {
         },
         {
             id: 4,
-            status: 'Life',
+            status: 'In development',
+            name: 'Curtain Master',
+            img: {
+                indexSrc: curtainMaster,
+                alt: 'curtain-master-img',
+            },
+            labels:
+                [
+                    labels.ReactJs,
+                    labels.Express,
+                    labels.NodeJs
+                ],
+            projectName: "Curtain webshop",
+            website: "https://curtainmaster.co.uk/",
+            github: "https://github.com/Karoly-Git",
+            description: [],
+        },
+        /*{
+            id: 4,
+            status: 'Live',
             name: 'Dog watcher app',
             img: {
-                src: dog,
+                indexSrc: dog,
                 alt: 'dog-img',
             },
             labels:
@@ -142,10 +158,10 @@ const data = {
         },
         {
             id: 5,
-            status: 'Life',
+            status: 'Live',
             name: 'Weather app',
             img: {
-                src: weather,
+                indexSrc: weather,
                 alt: 'weather-img',
             },
             labels:
@@ -166,10 +182,10 @@ const data = {
         },
         {
             id: 6,
-            status: 'Life',
+            status: 'Live',
             name: 'Bank holiday app',
             img: {
-                src: bankHoliday,
+                indexSrc: bankHoliday,
                 alt: 'bank-holiday-img',
             },
             labels:
@@ -190,10 +206,10 @@ const data = {
         },
         {
             id: 7,
-            status: 'Life',
+            status: 'Live',
             name: 'AWS 3s uploader app',
             img: {
-                src: uploader,
+                indexSrc: uploader,
                 alt: 'uploader-img',
             },
             labels:
@@ -209,10 +225,10 @@ const data = {
         },
         {
             id: 8,
-            status: 'Life',
+            status: 'Live',
             name: 'AWS 3s uploader app',
             img: {
-                src: uploader,
+                indexSrc: uploader,
                 alt: 'uploader-img',
             },
             labels:
@@ -228,10 +244,10 @@ const data = {
         },
         {
             id: 9,
-            status: 'Life',
+            status: 'Live',
             name: 'AWS 3s uploader app',
             img: {
-                src: uploader,
+                indexSrc: uploader,
                 alt: 'uploader-img',
             },
             labels:
@@ -244,7 +260,7 @@ const data = {
             website: "",
             github: "https://github.com/Karoly-Git",
             description: [],
-        },
+        },*/
     ]
 }
 

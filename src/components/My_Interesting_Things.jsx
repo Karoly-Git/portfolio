@@ -11,7 +11,7 @@ export default function InterestingThings(props) {
     }
 
     return (
-        <div className={`showcase interesting-things ${isShowCaseOpen ? 'open' : ''}`}  >
+        <div className={`showcase my-interesting-things ${isShowCaseOpen ? 'open' : ''}`}  >
             <header className="front-box reverse-front-box">
                 <MoreBtn
                     iconDirection="down"
@@ -23,9 +23,9 @@ export default function InterestingThings(props) {
                 </h2>
             </header>
             <footer className="content">
-                <iframe src="https://www.youtube.com/embed/ANHwnQL2zew" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                <iframe src="https://www.youtube.com/embed/p3EEIwEIlMs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe src="https://www.youtube.com/embed/XiQkeWOFwmk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <iframe src="https://www.youtube.com/embed/UXHoWNfjJYM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe src="https://www.youtube.com/embed/p3EEIwEIlMs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <iframe src="https://www.youtube.com/embed/EjiFEawYn88" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </footer>
         </div >

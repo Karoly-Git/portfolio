@@ -63,7 +63,6 @@
 }
 .img-container .bg-a {
   align-items: flex-end;
-  background-image: url("../img/img-01.jpg");
   color: white;
 }
 .img-container .bg-a div {
@@ -77,9 +76,19 @@
   height: 2rem;
   width: 2rem;
 }
+.img-container .bg-a {
+  background-image: url("../img/img-01.jpg");
+}
 .img-container .bg-b {
   background-image: url("../img/img-02.jpg");
 }
 .img-container .bg-c {
   background-image: url("../img/img-03.jpg");
+}
+.img-container .bg-d {
+  background-image: url("../img/img-04.jpg");
+}
+
+.page-2 .img-box {
+  height: 100%;
 }/*# sourceMappingURL=about-me.css.map */

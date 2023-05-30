@@ -17,13 +17,21 @@ export default function Form() {
         resolver: yupResolver(schema),
     });
 
-    const onSubmit = (data) => {
-        console.log(data)
-    }
+    const onSubmit = async (data) => {
+        const result = await fetch('http://localhost:8000/sendemail', {
+            method: "POST",
+            mode: 'no-cors',
+            headers: {
+                'Content-type': 'application/json',
 
-    //<form method="POST" action="/sendemail" onSubmit={handleSubmit(onSubmit)}>
+            },
+            body: JSON.stringify(data),
+        });
+
+    };
+
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form method="POST" action="/sendemail" onSubmit={handleSubmit(onSubmit)}>
             {errors.senderName && <span><p className='error'>{errors.senderName?.message}</p></span>}
             <input type="text" placeholder="Name*" name="sender_name" {...register('senderName')}></input>
 

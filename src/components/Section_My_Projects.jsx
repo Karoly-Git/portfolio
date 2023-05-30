@@ -1,7 +1,6 @@
 import React from 'react'
 
 import data from '../js/data'
-import temporaryImg from '../img/logo.png'
 
 export default function MyProjects(props) {
     return (
@@ -44,7 +43,11 @@ export default function MyProjects(props) {
                             <div className="grid-container">
                                 {data.projects.map((tech, index) =>
                                     <div key={index + tech.name} className="grid-item">
-                                        <img className="tech-icon" src={temporaryImg} alt={tech.name} />
+                                        <img
+                                            className="tech-icon"
+                                            src={tech.img.indexSrc}
+                                            alt={tech.name}
+                                        />
                                     </div>
                                 )}
                             </div >

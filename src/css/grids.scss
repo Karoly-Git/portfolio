@@ -23,3 +23,34 @@ $size: 10rem;
     height: $size;
     padding: 1rem;
 }
+
+.my-projects {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        //background-color: #2196f3;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(200, 200, 200, 0.5);
+        border: 2px solid rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+    }
+
+    .grid-item:hover {
+        scale: 2;
+    }
+
+    .tech-icon {
+        width: $size;
+        height: $size;
+        padding: 1rem;
+    }
+}

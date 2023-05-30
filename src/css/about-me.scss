@@ -77,7 +77,6 @@
 
     .bg-a {
         align-items: flex-end;
-        background-image: url('../img/img-01.jpg');
         color: white;
 
         div {
@@ -94,6 +93,11 @@
         }
     }
 
+
+    .bg-a {
+        background-image: url('../img/img-01.jpg');
+    }
+
     .bg-b {
         background-image: url('../img/img-02.jpg');
     }
@@ -102,4 +106,14 @@
         background-image: url('../img/img-03.jpg');
     }
 
+    .bg-d {
+        background-image: url('../img/img-04.jpg');
+    }
+
+}
+
+.page-2 {
+    .img-box {
+        height: 100%;
+    }
 }
