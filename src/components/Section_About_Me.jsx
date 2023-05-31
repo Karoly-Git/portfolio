@@ -1,22 +1,18 @@
 import { React, useState } from 'react'
-
-//import myCV from '../files/myCV'
 import { HiDownload as IconDownload } from 'react-icons/hi';
 import { MdExpandMore as IconMore } from 'react-icons/md';
-
 import { technologies } from '../js/data'
 import MoreBtn from './Btn_More';
 import PageBtn from './Btn_Pagination';
-
 import myCV from '../files/myCV.pdf'
 
 export default function AboutMe(props) {
-
     const [is2ndPage, setIs2ndPage] = useState(false)
 
     function show2ndPage() {
         setIs2ndPage(true);
     }
+
     function show1stPage() {
         setIs2ndPage(false);
     }
@@ -27,6 +23,7 @@ export default function AboutMe(props) {
                 <h2>
                     {props.languages.about_me.title[props.currentLanguage]}
                 </h2>
+
                 <div className="pagination">
                     <MoreBtn
                         size="small"
@@ -58,20 +55,16 @@ export default function AboutMe(props) {
                     />
                 </div>
             </header>
+
             <main className="section-main">
                 <div className={`page page-1 ${is2ndPage ? 'moved-to-left' : ''}`}>
                     <section className="box">
-                        <header className="box-header"></header>
                         <div className="box-main">
-                            <p className='description'>
-                                {props.languages.about_me.page1.p1[props.currentLanguage]}
-                            </p>
-                            <p className='description'>
-                                {props.languages.about_me.page1.p2[props.currentLanguage]}
-                            </p>
-                            <p className='description'>
-                                {props.languages.about_me.page1.p3[props.currentLanguage]}
-                            </p>
+                            {props.languages.about_me.description.page1.map(paragraph =>
+                                <p className='description'>
+                                    {paragraph[props.currentLanguage]}
+                                </p>
+                            )}
                             <p className='description'>
                                 <span className='btn function-btn' onClick={show2ndPage}>
                                     {props.languages.about_me.read_more_btn[props.currentLanguage]}
@@ -85,10 +78,9 @@ export default function AboutMe(props) {
                                 </a>
                             </p>
                         </div>
-                        <footer className="box-footer"></footer>
                     </section>
+
                     <section className="box">
-                        <header className="box-header"></header>
                         <div className="box-main">
                             <div className="img-container">
                                 <div className="img-box bg-a">
@@ -108,33 +100,16 @@ export default function AboutMe(props) {
                                 </div>
                             </div>
                         </div>
-                        <footer className="box-footer"></footer>
                     </section>
                 </div>
                 <div className={`page page-2 ${is2ndPage ? 'moved-to-left' : ''}`}>
                     <section className="box">
-                        <header className="box-header"></header>
                         <div className="box-main">
-                            <p className='description'>
-                                {props.languages.about_me.page2.p1[props.currentLanguage]}
-                            </p>
-                            <p className='description'>
-                                {props.languages.about_me.page2.p2[props.currentLanguage]}
-                            </p>
-                            <p className='description'>
-                                {props.languages.about_me.page2.p3[props.currentLanguage]}
-                            </p>
-                            <p className='description'>
-                                {props.languages.about_me.page2.p4_a[props.currentLanguage]}
-                                <a
-                                    className='link'
-                                    href='https://www.youtube.com/channel/UC_NS9-02WvPjZpvKqkJf4vQ'
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <span>YouTuber</span>
-                                </a>,
-                                {props.languages.about_me.page2.p4_b[props.currentLanguage]}
-                            </p>
+                            {props.languages.about_me.description.page2.map(paragraph =>
+                                <p className='description'>
+                                    {paragraph[props.currentLanguage]}
+                                </p>
+                            )}
                             <p className='description'>
                                 <span className='btn function-btn' onClick={show1stPage}>
                                     <IconMore className='icon left' />
@@ -148,20 +123,16 @@ export default function AboutMe(props) {
                                 </a>
                             </p>
                         </div>
-                        <footer className="box-footer"></footer>
                     </section>
                     <section className="box">
-                        <header className="box-header"></header>
                         <div className="box-main">
                             <div className="img-container">
                                 <div className="img-box bg-d"></div>
                             </div>
                         </div>
-                        <footer className="box-footer"></footer>
                     </section>
                 </div>
             </main>
-            <footer className="section-footer"></footer>
         </section>
     )
 }
