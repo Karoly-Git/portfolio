@@ -10,6 +10,7 @@
 }
 .showcase .front-box {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   width: 100%;
   height: 5rem;
@@ -28,7 +29,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: white;
-  *overflow: scroll;
 }
 .showcase .content iframe {
   border: 3px solid rgba(255, 255, 255, 0.5);

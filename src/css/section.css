@@ -7,76 +7,43 @@
   padding-bottom: 3rem;
   transition: background-color 250ms ease-in-out;
 }
-.section .section-header {
+.section header {
   display: flex;
   align-items: center;
-  padding: 0 2rem 2rem;
+  padding: 0 2rem;
+  background-color: red;
 }
-.section .section-header h2 {
+.section header h2 {
   font-size: 4rem;
   font-weight: 100;
   font-family: "Mina", sans-serif;
 }
-.section .section-main {
+.section main {
   display: flex;
   width: 100%;
 }
-.section .section-main .page {
+.section main .page {
   display: flex;
   width: 100%;
 }
-.section .section-main .page .box {
+.section main .page section {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   width: 50%;
   padding: 2rem;
 }
-.section .section-main .page .box .box-main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  align-items: center;
-  height: 100%;
-}
-.section .section-main .page .box .box-main .description {
+.section main .page section p {
   width: 80%;
   font-size: 1.075rem;
   line-height: 1.35rem;
   transition: color 250ms ease-in-out;
 }
-.section .section-main .page .box .box-main .description .strong {
-  font-weight: 550;
-  font-style: italic;
-}
-.section .section-main .page .box .box-main .description .link {
-  margin: 0 5px;
-  padding: 2px;
-  text-decoration: underline;
-  cursor: pointer;
-  transition: all 150ms ease;
-}
-.section .section-main .page .box .box-main .description .link:hover {
-  background-color: rgba(60, 60, 60, 0.2);
-  color: white;
-  color: black;
-}
-.section .section-main .page .box .box-main .description:not(.description:last-child) {
+.section main .page section p:not(p:last-child) {
   padding-bottom: 1rem;
 }
-.section .section-main .page .box .box-footer {
-  background-color: transparent;
-}
-.section .section-footer {
-  display: flex;
-  padding: 0 2rem;
-}
 
-.reverse-section .section-header,
-.reverse-section .page {
+.section-reverse .section-header,
+.section-reverse .page {
   flex-direction: row-reverse;
-}
-
-.reverse-front-box {
-  flex-direction: row-reverse;
+  justify-content: flex-end;
 }/*# sourceMappingURL=section.css.map */

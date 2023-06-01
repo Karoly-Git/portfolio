@@ -5,105 +5,55 @@
     margin-left: auto;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    //max-width: 1500px;
     transition: background-color 250ms ease-in-out;
 
-    .section-header {
+    header {
         display: flex;
         align-items: center;
-        padding: 0 2rem 2rem;
+        padding: 0 2rem;
+        background-color: red;
 
         h2 {
             font-size: 4rem;
             font-weight: 100;
-            //font-family: 'Share Tech', sans-serif;
-            //font-family: 'Tilt Neon', cursive;
-            //font-family: 'Oooh Baby', cursive;
-            //font-family: 'Share Tech Mono', monospace;
-            //font-family: 'Delicious Handrawn', cursive;
             font-family: 'Mina', sans-serif;
         }
     }
 
-    .section-main {
+    main {
         display: flex;
         width: 100%;
-        //background-color: rgba(60, 60, 60, 0.7);
-        //border: 5px solid black;
 
         .page {
             display: flex;
             width: 100%;
 
-            .box {
+            section {
                 display: flex;
                 flex-direction: column;
-                min-height: 100%;
                 width: 50%;
                 padding: 2rem;
 
-                .box-main {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                    align-items: center;
-                    height: 100%;
-                    //background-color: blueviolet;
-
-                    .description {
-                        width: 80%;
-                        font-size: 1.075rem;
-                        line-height: 1.35rem;
-                        transition: color 250ms ease-in-out;
-
-                        .strong {
-                            font-weight: 550;
-                            font-style: italic;
-                        }
-
-                        .link {
-                            margin: 0 5px;
-                            padding: 2px;
-                            //font-style: italic;
-                            text-decoration: underline;
-                            cursor: pointer;
-                            transition: all 150ms ease;
-                        }
-
-                        .link:hover {
-                            background-color: rgba(60, 60, 60, 0.2);
-                            color: white;
-                            color: black;
-                        }
-                    }
-
-                    .description:not(.description:last-child) {
-                        padding-bottom: 1rem;
-                    }
+                p {
+                    width: 80%;
+                    font-size: 1.075rem;
+                    line-height: 1.35rem;
+                    transition: color 250ms ease-in-out;
                 }
 
-                .box-footer {
-                    background-color: transparent;
+                p:not(p:last-child) {
+                    padding-bottom: 1rem;
                 }
             }
         }
     }
-
-    .section-footer {
-        display: flex;
-        padding: 0 2rem;
-    }
 }
 
-
-.reverse-section {
+.section-reverse {
 
     .section-header,
     .page {
         flex-direction: row-reverse;
+        justify-content: flex-end;
     }
-}
-
-.reverse-front-box {
-    flex-direction: row-reverse;
 }

@@ -12,7 +12,7 @@ export default function Blogs(props) {
 
     return (
         <div className={`showcase my-blogs ${isShowCaseOpen ? 'open' : ''}`}  >
-            <header className="front-box reverse-front-box">
+            <header className="front-box">
                 <MoreBtn
                     iconDirection="down"
                     handleClick={handleClick}

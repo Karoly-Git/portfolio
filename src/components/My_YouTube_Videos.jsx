@@ -13,7 +13,7 @@ export default function YouTubeVideos(props) {
 
     return (
         <div className={`showcase my-youtube-videos ${isShowCaseOpen ? 'open' : ''}`}  >
-            <header className="front-box reverse-front-box">
+            <header className="front-box">
                 <MoreBtn
                     iconDirection="down"
                     handleClick={handleClick}

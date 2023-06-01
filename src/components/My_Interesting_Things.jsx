@@ -12,7 +12,7 @@ export default function InterestingThings(props) {
 
     return (
         <div className={`showcase my-interesting-things ${isShowCaseOpen ? 'open' : ''}`}  >
-            <header className="front-box reverse-front-box">
+            <header className="front-box">
                 <MoreBtn
                     iconDirection="down"
                     handleClick={handleClick}
