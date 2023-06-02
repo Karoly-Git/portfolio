@@ -36,52 +36,52 @@ export default function Home(props) {
 
     return (
         <>
-            <ContactForm
+            {<ContactForm
                 isFormDisplayed={props.isFormDisplayed}
                 showForm={props.showForm}
                 hideForm={props.hideForm}
-            />
-            <Switches
+            />}
+            {false && <Switches
                 isDarkMode={props.isDarkMode}
                 switchDarkModeOnOff={props.switchDarkModeOnOff}
                 currentLanguage={props.currentLanguage}
                 changeCurrentLanguage={props.changeCurrentLanguage}
-            />
-            <HelloEveryone
+            />}
+            {false && <HelloEveryone
                 showForm={props.showForm}
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
-            />
-            <Blogs
+            />}
+            {false && <Blogs
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
-            />
-            <AboutMe
+            />}
+            {false && <AboutMe
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
-            />
-            <YouTubeVideos
+            />}
+            {false && <YouTubeVideos
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
-            />
-            <UsedTechs
+            />}
+            {false && <UsedTechs
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
-            />
-            <InterestingThings
+            />}
+            {false && <InterestingThings
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
-            />
-            <MyProjects
+            />}
+            {false && <MyProjects
                 showForm={props.showForm}
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
-            />
-            <ScrollToTop
+            />}
+            {<ScrollToTop
                 smooth
                 component={<IconMore className='icon' />}
                 style={{ right: `${btnRight}rem` }}
-            />
+            />}
         </>
     )
 }

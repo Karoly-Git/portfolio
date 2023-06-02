@@ -1,12 +1,11 @@
 .get-in-touch {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
 }
 .get-in-touch .box {
   display: flex;
   flex-direction: column;
   width: 50%;
+  min-height: 150px;
 }
 .get-in-touch .top-box {
   color: white;
@@ -19,6 +18,10 @@
   font-family: "Oooh Baby", cursive;
   font-family: "Mina", sans-serif;
   color: white;
+}
+.get-in-touch .top-box .section-title {
+  margin: 1rem 0;
+  font-size: 3rem;
 }
 .get-in-touch .bottom-box {
   display: flex;
@@ -34,19 +37,22 @@
 .get-in-touch .bottom-box .contact-list .my-email:hover {
   color: red;
 }
-.get-in-touch .bottom-box .contact-list li {
+.get-in-touch .bottom-box .contact-list li:not(li:last-child) {
   margin-bottom: 1rem;
 }
-.get-in-touch .bottom-box .contact-list li h2 {
+.get-in-touch .bottom-box .contact-list li:not(li:last-child) h2 {
   margin-bottom: 0.25rem;
 }
-.get-in-touch .bottom-box .contact-list li a {
+.get-in-touch .bottom-box .contact-list li:not(li:last-child) a {
   text-decoration: none;
 }
-.get-in-touch .bottom-box .contact-list li h2,
-.get-in-touch .bottom-box .contact-list li a,
-.get-in-touch .bottom-box .contact-list li div {
+.get-in-touch .bottom-box .contact-list li:not(li:last-child) h2,
+.get-in-touch .bottom-box .contact-list li:not(li:last-child) a,
+.get-in-touch .bottom-box .contact-list li:not(li:last-child) div {
   color: rgb(220, 229, 236);
+}
+.get-in-touch .bottom-box .contact-list .find-me-item .social-links li:last-child {
+  margin-bottom: 1rem;
 }
 .get-in-touch .text-box {
   background-color: black;
@@ -63,4 +69,35 @@
   background-image: url("../img/img-1.jpg");
   background-position: center;
   background-size: cover;
+}
+
+@media only screen and (max-width: 1050px) {
+  .get-in-touch {
+    flex-direction: column;
+  }
+  .get-in-touch .top-box .section-title {
+    font-size: 3rem;
+  }
+  .get-in-touch .box {
+    width: 100%;
+  }
+  .get-in-touch .img-box {
+    display: none;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .get-in-touch .section-title {
+    line-height: 3rem;
+  }
+  .get-in-touch .bottom-box {
+    justify-content: flex-start;
+  }
+  .get-in-touch .bottom-box .contact-list {
+    padding: 1rem 0 0 0;
+  }
+  .get-in-touch .bottom-box .contact-list .email-item,
+.get-in-touch .bottom-box .contact-list .location-item,
+.get-in-touch .bottom-box .contact-list .find-me-item h2 {
+    display: none;
+  }
 }/*# sourceMappingURL=get-in-touch.css.map */

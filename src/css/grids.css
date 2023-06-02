@@ -1,48 +1,35 @@
 .grid-container {
-  display: grid;
+  display: flex;
+  width: 32rem;
+  height: 32rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-  row-gap: 1rem;
 }
-
-.grid-item {
+.grid-container .grid-item {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(200, 200, 200, 0.5);
   border: 2px solid rgba(0, 0, 0, 0.15);
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1rem;
 }
-
-.tech-icon {
+.grid-container .tech-icon {
   width: 10rem;
   height: 10rem;
   padding: 1rem;
 }
 
 .my-projects .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-  row-gap: 1rem;
+  width: 21rem;
+  height: 21rem;
 }
-.my-projects .grid-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(200, 200, 200, 0.5);
-  border: 2px solid rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
+.my-projects .grid-container .grid-item {
+  transition: 200ms ease-in-out;
 }
-.my-projects .grid-item:hover {
-  scale: 2;
-}
-.my-projects .tech-icon {
-  width: 10rem;
-  height: 10rem;
-  padding: 1rem;
+.my-projects .grid-container .grid-item:hover {
+  scale: 1.75;
 }/*# sourceMappingURL=grids.css.map */

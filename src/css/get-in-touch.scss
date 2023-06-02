@@ -1,81 +1,135 @@
-  .get-in-touch {
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
+.get-in-touch {
+    display: flex;
 
-      .box {
-          display: flex;
-          flex-direction: column;
-          width: 50%;
-      }
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        min-height: 150px;
+    }
 
-      .top-box {
-          color: white;
+    .top-box {
+        color: white;
 
-          p {
-              font-size: 4rem;
-              font-weight: 600;
-              text-transform: uppercase;
-              letter-spacing: 4px;
-              font-family: 'Oooh Baby', cursive;
-              font-family: 'Mina', sans-serif;
-              color: white;
-          }
+        p {
+            font-size: 4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-family: 'Oooh Baby', cursive;
+            font-family: 'Mina', sans-serif;
+            color: white;
+        }
 
-      }
+        .section-title {
+            margin: 1rem 0;
+            font-size: 3rem;
+        }
 
-      .bottom-box {
-          display: flex;
-          justify-content: flex-end;
+    }
 
-          .contact-list {
-              display: flex;
-              flex-direction: column;
-              list-style: none;
-              padding: 1rem;
-              width: 50%;
+    .bottom-box {
+        display: flex;
+        justify-content: flex-end;
 
-              .my-email:hover {
-                  color: red;
-              }
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 1rem;
+            width: 50%;
 
-              li {
-                  margin-bottom: 1rem;
+            .my-email:hover {
+                color: red;
+            }
 
-                  h2 {
-                      margin-bottom: 0.25rem;
-                  }
+            li:not(li:last-child) {
+                margin-bottom: 1rem;
 
-                  a {
-                      text-decoration: none;
-                  }
+                h2 {
+                    margin-bottom: 0.25rem;
+                }
 
-                  h2,
-                  a,
-                  div {
-                      color: rgb(220, 229, 236);
-                  }
-              }
-          }
-      }
+                a {
+                    text-decoration: none;
+                }
 
-      .text-box {
-          background-color: black;
-          padding: 2rem;
+                h2,
+                a,
+                div {
+                    color: rgb(220, 229, 236);
+                }
+            }
 
-          .my-name {
-              font-size: 1.5rem;
-              color: rgb(220, 229, 236);
-          }
+            .find-me-item {
+                .social-links {
+                    li:last-child {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
 
-          .my-title {
-              font-style: italic;
-          }
-      }
+    .text-box {
+        background-color: black;
+        padding: 2rem;
 
-      .img-box {
-          background-image: url('../img/img-1.jpg');
-          background-position: center;
-          background-size: cover;
-      }
-  }
+        .my-name {
+            font-size: 1.5rem;
+            color: rgb(220, 229, 236);
+        }
+
+        .my-title {
+            font-style: italic;
+        }
+    }
+
+    .img-box {
+        background-image: url('../img/img-1.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .get-in-touch {
+        flex-direction: column;
+
+        .top-box {
+            .section-title {
+                font-size: 3rem;
+            }
+        }
+
+        .box {
+            width: 100%;
+        }
+
+        .img-box {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .get-in-touch {
+        .section-title {
+            line-height: 3rem;
+        }
+
+        .bottom-box {
+            justify-content: flex-start;
+
+            .contact-list {
+                padding: 1rem 0 0 0;
+
+                .email-item,
+                .location-item,
+                .find-me-item h2 {
+                    display: none;
+                }
+            }
+        }
+    }
+}

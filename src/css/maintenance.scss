@@ -122,92 +122,99 @@ body {
 
 
 @media only screen and (max-width: 830px) {
-    .date-containet {
-        align-items: center;
+    .maintenance {
+        .date-containet {
+            align-items: center;
 
-    }
+        }
 
-    .img-box {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem;
-    }
+        .img-box {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 2rem;
+        }
 
-    .text-box {
-        padding: 2rem !important;
+        .text-box {
+            padding: 2rem !important;
+        }
     }
 }
 
 @media only screen and (max-width: 600px) {
     .maintenance {
         width: 100%;
-    }
 
-    .server-box {
-        margin: 0;
-    }
+        .server-box {
+            margin: 0;
+        }
 
-    .server-box:last-child {
-        margin-top: 2rem;
+        .server-box:last-child {
+            margin-top: 2rem;
+        }
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .top-container {
-        flex-direction: column;
-    }
+    .maintenance {
 
-    .img-box {
-        flex-direction: row;
-        justify-content: center;
-        padding: 0;
-    }
+        .top-container {
+            flex-direction: column;
+        }
 
-    .logo,
-    .tool-giphy {
-        width: 100px;
-        height: 100px;
-    }
+        .img-box {
+            flex-direction: row;
+            justify-content: center;
+            padding: 0;
+        }
 
-    .text-box {
-        padding: 0 !important;
-        align-items: center;
-    }
+        .logo,
+        .tool-giphy {
+            width: 100px;
+            height: 100px;
+        }
 
-    .contact-box {
-        margin-bottom: 1rem;
-        justify-content: center;
-    }
+        .text-box {
+            padding: 0 !important;
+            align-items: center;
+        }
 
-    h2 {
-        margin: 0;
-        margin-bottom: 1rem !important;
-        font-size: 1.5rem !important;
-    }
+        .contact-box {
+            margin-bottom: 1rem;
+            justify-content: center;
+        }
 
-    .icon {
-        font-size: 1.5rem;
-    }
+        h2 {
+            margin: 0;
+            margin-bottom: 1rem !important;
+            font-size: 1.5rem !important;
+        }
 
-    p {
-        text-align: center;
-        padding: 0 1rem;
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        p {
+            text-align: center;
+            padding: 0 1rem;
+        }
     }
 }
 
 @media only screen and (max-width: 280px) {
+    .maintenance {
 
-    .logo,
-    .tool-giphy {
-        width: 50px;
-        height: 50px;
-    }
+        .logo,
+        .tool-giphy {
+            width: 50px;
+            height: 50px;
+        }
 
-    h2 {
-        margin-top: 1rem;
-    }
+        h2 {
+            margin-top: 1rem;
+        }
 
-    h3 {
-        font-size: 0.65rem !important;
+        h3 {
+            font-size: 0.65rem !important;
+        }
     }
 }

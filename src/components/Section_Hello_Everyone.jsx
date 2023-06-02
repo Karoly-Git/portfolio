@@ -1,8 +1,6 @@
 import React from 'react'
-
 import ContactLinks from './Links_Contact'
 import SocialLinks from './Links_Social'
-
 import { TfiCheckBox as CheckBoxIcon } from 'react-icons/tfi'
 import helloImage from '../img/me1.png'
 
@@ -18,6 +16,7 @@ export default function HelloEveryone(props) {
                 </h3>
                 <SocialLinks />
             </header>
+
             <main className="section-main">
                 <div className="page">
                     <section className="box">
@@ -38,6 +37,7 @@ export default function HelloEveryone(props) {
                             <div></div>
                         </footer>
                     </section>
+
                     <section className="box">
                         <header className="box-header">
                             <h3>

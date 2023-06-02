@@ -21,11 +21,11 @@ export default function GetInTouch(props) {
                 </section>
                 <div className='bottom-box'>
                     <ul className='contact-list'>
-                        <li>
+                        <li className='email-item'>
                             <h2>Email:</h2>
                             <a className='my-email' href="mailto:karoly@webdevme.co.uk">karoly@webdevme.co.uk</a>
                         </li>
-                        <li>
+                        <li className='location-item'>
                             <h2>
                                 {props.languages.get_in_touch.location[props.currentLanguage]}
                             </h2>
@@ -35,7 +35,7 @@ export default function GetInTouch(props) {
                                 SW18
                             </div>
                         </li>
-                        <li>
+                        <li className='find-me-item'>
                             <h2>
                                 {props.languages.get_in_touch.find_me_on[props.currentLanguage]}
                             </h2>

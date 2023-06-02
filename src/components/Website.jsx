@@ -38,7 +38,6 @@ export default function Website() {
     return (
         <Router>
             <div className={`${isDarkMode ? 'dark-mode' : ''}`}>
-                <header></header>
                 <main>
                     <Routes>
                         <Route

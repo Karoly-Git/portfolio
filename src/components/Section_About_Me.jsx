@@ -60,17 +60,17 @@ export default function AboutMe(props) {
                 <div className={`page page-1 ${is2ndPage ? 'moved-to-left' : ''}`}>
                     <section>
                         {props.languages.about_me.description.page1.map(paragraph =>
-                            <p className='description'>
+                            <p>
                                 {paragraph[props.currentLanguage]}
                             </p>
                         )}
-                        <p className='description'>
+                        <p>
                             <span className='btn function-btn' onClick={show2ndPage}>
                                 {props.languages.about_me.read_more_btn[props.currentLanguage]}
                                 <IconMore className='icon right' />
                             </span>
                         </p>
-                        <p className='description'>
+                        <p>
                             <a
                                 className='btn function-btn'
                                 href={myCV}
@@ -107,17 +107,17 @@ export default function AboutMe(props) {
                 <div className={`page page-2 ${is2ndPage ? 'moved-to-left' : ''}`}>
                     <section>
                         {props.languages.about_me.description.page2.map(paragraph =>
-                            <p className='description'>
+                            <p>
                                 {paragraph[props.currentLanguage]}
                             </p>
                         )}
-                        <p className='description'>
+                        <p>
                             <span className='btn function-btn' onClick={show1stPage}>
                                 <IconMore className='icon left' />
                                 {props.languages.about_me.go_back_btn[props.currentLanguage]}
                             </span>
                         </p>
-                        <p className='description'>
+                        <p>
                             <a
                                 className='btn function-btn'
                                 href={myCV}

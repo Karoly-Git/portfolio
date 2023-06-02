@@ -101,15 +101,15 @@ body {
 }
 
 @media only screen and (max-width: 830px) {
-  .date-containet {
+  .maintenance .date-containet {
     align-items: center;
   }
-  .img-box {
+  .maintenance .img-box {
     flex-direction: column;
     align-items: flex-start;
     padding: 2rem;
   }
-  .text-box {
+  .maintenance .text-box {
     padding: 2rem !important;
   }
 }
@@ -117,58 +117,58 @@ body {
   .maintenance {
     width: 100%;
   }
-  .server-box {
+  .maintenance .server-box {
     margin: 0;
   }
-  .server-box:last-child {
+  .maintenance .server-box:last-child {
     margin-top: 2rem;
   }
 }
 @media only screen and (max-width: 500px) {
-  .top-container {
+  .maintenance .top-container {
     flex-direction: column;
   }
-  .img-box {
+  .maintenance .img-box {
     flex-direction: row;
     justify-content: center;
     padding: 0;
   }
-  .logo,
-.tool-giphy {
+  .maintenance .logo,
+.maintenance .tool-giphy {
     width: 100px;
     height: 100px;
   }
-  .text-box {
+  .maintenance .text-box {
     padding: 0 !important;
     align-items: center;
   }
-  .contact-box {
+  .maintenance .contact-box {
     margin-bottom: 1rem;
     justify-content: center;
   }
-  h2 {
+  .maintenance h2 {
     margin: 0;
     margin-bottom: 1rem !important;
     font-size: 1.5rem !important;
   }
-  .icon {
+  .maintenance .icon {
     font-size: 1.5rem;
   }
-  p {
+  .maintenance p {
     text-align: center;
     padding: 0 1rem;
   }
 }
 @media only screen and (max-width: 280px) {
-  .logo,
-.tool-giphy {
+  .maintenance .logo,
+.maintenance .tool-giphy {
     width: 50px;
     height: 50px;
   }
-  h2 {
+  .maintenance h2 {
     margin-top: 1rem;
   }
-  h3 {
+  .maintenance h3 {
     font-size: 0.65rem !important;
   }
 }/*# sourceMappingURL=maintenance.css.map */
