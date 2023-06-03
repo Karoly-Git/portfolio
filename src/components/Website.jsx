@@ -63,7 +63,7 @@ export default function Website() {
                         />
                     </Routes>
                 </main>
-                {false && <footer>
+                {!false && <footer>
                     <GetInTouch
                         isDarkMode={isDarkMode}
                         showForm={showForm}
