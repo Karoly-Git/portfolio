@@ -24,7 +24,11 @@ export default function MyProjects(props) {
                         <div className="grid-container">
                             {data.projects.map((tech, index) =>
                                 <div key={index + tech.name} className="grid-item">
-                                    <a href={tech.website} target="_blank" rel="noopener noreferrer">
+                                    <a
+                                        href={tech.website}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         <img
                                             className="tech-icon"
                                             src={tech.img.indexSrc}

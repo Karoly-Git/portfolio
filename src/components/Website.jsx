@@ -63,14 +63,14 @@ export default function Website() {
                         />
                     </Routes>
                 </main>
-                <footer>
+                {false && <footer>
                     <GetInTouch
                         isDarkMode={isDarkMode}
                         showForm={showForm}
                         languages={languages}
                         currentLanguage={currentLanguage}
                     />
-                </footer>
+                </footer>}
             </div>
         </Router>
     )
