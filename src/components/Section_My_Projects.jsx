@@ -21,9 +21,9 @@ export default function MyProjects(props) {
                     </section>
 
                     {!false && <section>
-                        <div className="grid-container">
+                        <div className="project-container">
                             {data.projects.map((tech, index) =>
-                                <div key={index + tech.name} className="grid-item">
+                                <div key={index + tech.name} className="project-item">
                                     <a
                                         href={tech.website}
                                         target="_blank"

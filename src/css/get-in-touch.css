@@ -85,6 +85,11 @@
     display: none;
   }
 }
+@media only screen and (max-width: 500px) {
+  .get-in-touch .section-title {
+    font-size: 2rem !important;
+  }
+}
 @media only screen and (max-width: 470px) {
   .get-in-touch .section-title {
     line-height: 3rem;
@@ -99,5 +104,10 @@
 .get-in-touch .bottom-box .contact-list .location-item,
 .get-in-touch .bottom-box .contact-list .find-me-item h2 {
     display: none;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .get-in-touch .section-title {
+    font-size: 1.5rem !important;
   }
 }/*# sourceMappingURL=get-in-touch.css.map */

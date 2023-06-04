@@ -24,7 +24,7 @@ export default function YouTubeVideos(props) {
                 </h2>
             </header>
             <footer className="content">
-                <InfoIcon className='icon' title="Videos' language is Hungarian" />
+                {false && <InfoIcon className='icon' title="Videos' language is Hungarian" />}
                 <iframe src="https://www.youtube.com/embed/z_8kjPVnDPo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <iframe src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <iframe src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>

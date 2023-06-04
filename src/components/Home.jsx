@@ -41,7 +41,7 @@ export default function Home(props) {
                 showForm={props.showForm}
                 hideForm={props.hideForm}
             />}
-            {false && <Switches
+            {!false && <Switches
                 isDarkMode={props.isDarkMode}
                 switchDarkModeOnOff={props.switchDarkModeOnOff}
                 currentLanguage={props.currentLanguage}
@@ -60,7 +60,7 @@ export default function Home(props) {
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />}
-            {false && <YouTubeVideos
+            {!false && <YouTubeVideos
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />}
@@ -68,11 +68,11 @@ export default function Home(props) {
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />}
-            {false && <InterestingThings
+            {!false && <InterestingThings
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />}
-            {false && <MyProjects
+            {!false && <MyProjects
                 showForm={props.showForm}
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}

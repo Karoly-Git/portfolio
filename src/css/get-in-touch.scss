@@ -112,6 +112,14 @@
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .get-in-touch {
+        .section-title {
+            font-size: 2rem !important;
+        }
+    }
+}
+
 @media only screen and (max-width: 470px) {
     .get-in-touch {
         .section-title {
@@ -130,6 +138,14 @@
                     display: none;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .get-in-touch {
+        .section-title {
+            font-size: 1.5rem !important;
         }
     }
 }
