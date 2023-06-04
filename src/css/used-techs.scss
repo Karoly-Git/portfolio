@@ -1,9 +1,79 @@
 .used-techs {
-    //background-color: red;
-    //border: 5px solid black;
+    .page {
+        section {
+            p {
+                width: unset !important;
+            }
 
-    .section-header {
-        //flex-direction: column;
-        //justify-content: flex-end;
+            .tech-container {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                max-width: 500px;
+                justify-content: space-between;
+                align-content: space-between;
+
+                .tech-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(200, 200, 200, 0.5);
+                    border: 2px solid rgba(0, 0, 0, 0.15);
+                    width: 30%;
+                    height: 30%;
+                    padding: 1rem;
+                }
+
+                .tech-icon {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .used-techs {
+        .page {
+            flex-direction: column;
+
+            section {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .used-techs {
+        h2 {
+            font-size: 3rem !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .used-techs {
+        h2 {
+            font-size: 2rem !important;
+            font-weight: 600 !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .used-techs {
+        .tech-item {
+            padding: 0.25rem !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .used-techs {
+        h2 {
+            font-size: 1.5rem !important;
+        }
     }
 }

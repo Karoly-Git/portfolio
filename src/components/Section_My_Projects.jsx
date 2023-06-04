@@ -20,7 +20,7 @@ export default function MyProjects(props) {
                         )}
                     </section>
 
-                    <section>
+                    {!false && <section>
                         <div className="grid-container">
                             {data.projects.map((tech, index) =>
                                 <div key={index + tech.name} className="grid-item">
@@ -38,7 +38,7 @@ export default function MyProjects(props) {
                                 </div>
                             )}
                         </div>
-                    </section>
+                    </section>}
                 </div>
             </main>
         </section>

@@ -21,9 +21,9 @@ export default function UsedTechs(props) {
                     </section>
 
                     <section>
-                        <div className="grid-container">
+                        <div className="tech-container">
                             {technologies.map((tech, index) =>
-                                <div key={index + tech.name} className="grid-item">
+                                <div key={index + tech.name} className="tech-item">
                                     <img
                                         className="tech-icon"
                                         src={tech.svg}
