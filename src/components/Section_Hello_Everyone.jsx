@@ -33,9 +33,6 @@ export default function HelloEveryone(props) {
                                 </li>
                             </ul>
                         </div>
-                        <footer className="box-footer">
-                            <div></div>
-                        </footer>
                     </section>
 
                     <section className="box">

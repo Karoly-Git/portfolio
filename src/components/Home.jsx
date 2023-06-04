@@ -47,7 +47,7 @@ export default function Home(props) {
                 currentLanguage={props.currentLanguage}
                 changeCurrentLanguage={props.changeCurrentLanguage}
             />}
-            {false && <HelloEveryone
+            {!false && <HelloEveryone
                 showForm={props.showForm}
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}

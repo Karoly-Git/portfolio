@@ -39,8 +39,16 @@
   }
 }
 @media only screen and (max-width: 650px) {
+  .my-projects {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   .my-projects h2 {
     font-size: 3rem !important;
+  }
+  .my-projects .page section {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
   }
 }
 @media only screen and (max-width: 500px) {
