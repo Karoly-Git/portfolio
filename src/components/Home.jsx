@@ -56,7 +56,7 @@ export default function Home(props) {
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />}
-            {false && <AboutMe
+            {!false && <UsedTechs
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />}
@@ -64,7 +64,7 @@ export default function Home(props) {
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />}
-            {!false && <UsedTechs
+            {!false && <AboutMe
                 languages={props.languages}
                 currentLanguage={props.currentLanguage}
             />}

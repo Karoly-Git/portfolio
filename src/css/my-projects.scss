@@ -32,6 +32,10 @@
                 }
             }
         }
+
+        section:nth-child(1) {
+            padding-left: 5rem;
+        }
     }
 }
 
@@ -42,6 +46,10 @@
 
             section {
                 width: 100% !important;
+            }
+
+            section:nth-child(1) {
+                padding-left: 2rem;
             }
 
             section:nth-child(2) {

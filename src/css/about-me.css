@@ -7,11 +7,17 @@
   transition: left 1s ease-in-out;
   left: 0;
 }
+.about-me main .page-1 section:nth-child(1) {
+  padding-left: 5rem;
+}
 .about-me main .page-2 {
   flex-direction: row-reverse;
 }
 .about-me main .page-2 .img-box {
   height: 100%;
+}
+.about-me main .page-2 section:nth-child(2) {
+  padding-left: 5rem;
 }
 .about-me main .moved-to-left {
   left: -100%;
@@ -87,4 +93,81 @@
 }
 .img-container .bg-d {
   background-image: url("../img/img-04.jpg");
+}
+
+@media only screen and (max-width: 800px) {
+  .about-me header {
+    justify-content: space-between;
+  }
+  .about-me header .pagination {
+    margin: 0;
+  }
+  .about-me .page-1 section:nth-child(1) {
+    padding-left: 2rem !important;
+  }
+  .about-me .page-2 section:nth-child(2) {
+    padding-left: 2rem !important;
+  }
+  .about-me .img-container {
+    justify-content: flex-start;
+  }
+  .about-me .img-container .bg-a {
+    height: 200px;
+  }
+  .about-me .img-container .bg-d {
+    height: 300px !important;
+  }
+  .about-me .img-container .sub-img-box {
+    height: 200px;
+  }
+  .about-me .img-container .sub-img-box div {
+    font-size: 1.15rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .about-me {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .about-me header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-me header h2 {
+    font-size: 3rem;
+  }
+  .about-me header .pagination .sub-pages {
+    margin: 0;
+  }
+  .about-me header .pagination .sub-pages li {
+    margin: 0 !important;
+  }
+  .about-me header .pagination .open-btn {
+    scale: 0.55;
+  }
+  .about-me header .pagination .pagin-btn {
+    scale: 0.65;
+  }
+  .about-me section p {
+    max-width: unset !important;
+  }
+  .about-me .page-1 section:nth-child(2),
+.about-me .page-2 section:nth-child(2) {
+    display: none;
+  }
+  .about-me .page-1 section:nth-child(1),
+.about-me .page-2 section:nth-child(1) {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about-me header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .about-me header h2 {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=about-me.css.map */

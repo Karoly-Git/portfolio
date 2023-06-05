@@ -23,6 +23,9 @@
   width: 100%;
   height: 100%;
 }
+.used-techs .page section:nth-child(2) {
+  padding-left: 5rem;
+}
 
 @media only screen and (max-width: 800px) {
   .used-techs .page {
@@ -30,6 +33,9 @@
   }
   .used-techs .page section {
     width: 100% !important;
+  }
+  .used-techs .page section:nth-child(2) {
+    padding-left: 2rem;
   }
 }
 @media only screen and (max-width: 650px) {
