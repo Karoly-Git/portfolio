@@ -11,23 +11,23 @@ export default function InterestingThings(props) {
     }
 
     return (
-        <div className={`showcase my-interesting-things ${isShowCaseOpen ? 'open' : ''}`}  >
+        <section className='showcase my-interesting-things'  >
             <header className="front-box">
+                <h2>
+                    {props.languages.interesting_things.title[props.currentLanguage]}
+                </h2>
                 <MoreBtn
                     iconDirection="down"
                     handleClick={handleClick}
                     newIconDirection={newIconDirection}
                 />
-                <h2>
-                    {props.languages.interesting_things.title[props.currentLanguage]}
-                </h2>
             </header>
-            <footer className="content">
+            <main className={`content ${isShowCaseOpen ? 'open' : ''}`}>
                 <iframe src="https://www.youtube.com/embed/XiQkeWOFwmk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <iframe src="https://www.youtube.com/embed/UXHoWNfjJYM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <iframe src="https://www.youtube.com/embed/p3EEIwEIlMs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <iframe src="https://www.youtube.com/embed/EjiFEawYn88" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-            </footer>
-        </div >
+            </main>
+        </section>
     )
 }

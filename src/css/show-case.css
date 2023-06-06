@@ -1,16 +1,12 @@
 .showcase {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 5rem;
-  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  transition: height 350ms ease-in-out;
 }
 .showcase .front-box {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -19,22 +15,25 @@
 .showcase .front-box h2 {
   color: white;
   font-size: 2rem;
-  margin: 0 1rem;
+  margin: 0 1rem 0 0;
 }
 .showcase .content {
   display: flex;
-  justify-content: space-evenly;
-  padding: 0 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  color: white;
+  height: 0;
+  transition: height 350ms ease-in-out;
+  overflow: scroll;
+  overflow-y: hidden;
+  padding: 0 0.5rem;
 }
 .showcase .content iframe {
   border: 3px solid rgba(255, 255, 255, 0.5);
+  border: none;
+  height: 12rem;
+  padding: 1rem 0.5rem;
 }
 
 .open {
-  height: 19rem;
+  height: 13rem !important;
 }
 
 .up {

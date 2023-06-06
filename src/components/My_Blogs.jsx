@@ -11,24 +11,24 @@ export default function Blogs(props) {
     }
 
     return (
-        <div className={`showcase my-blogs ${isShowCaseOpen ? 'open' : ''}`}  >
+        <section className="showcase my-blogs">
             <header className="front-box">
+                <h2>
+                    {props.languages.blogs.title[props.currentLanguage]}
+                </h2>
                 <MoreBtn
                     iconDirection="down"
                     handleClick={handleClick}
                     newIconDirection={newIconDirection}
                 />
-                <h2>
-                    {props.languages.blogs.title[props.currentLanguage]}
-                </h2>
             </header>
-            <footer className="content">
+            <main className={`content ${isShowCaseOpen ? 'open' : ''}`}>
                 <iframe src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <iframe src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <iframe src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <iframe src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-            </footer>
-        </div >
+            </main>
+        </section>
     )
 }
 
