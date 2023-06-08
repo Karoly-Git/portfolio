@@ -42,7 +42,7 @@ export default function Website() {
                     <Routes>
                         <Route
                             //path='/portfolio'
-                            path='/'
+                            path=''
                             element={
                                 <Home
                                     isDarkMode={isDarkMode}
