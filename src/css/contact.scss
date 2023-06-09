@@ -1,18 +1,18 @@
 .contact {
-    $formWidth: 45vw;
+    $formWidth: 45%;
     $formOffsetFromTop: 6rem;
     width: $formWidth;
     max-height: 90vh;
     padding: 2rem;
     background-color: rgb(164, 215, 164);
     position: fixed;
-    left: calc((100vw - $formWidth)/2);
+    left: calc((100% - $formWidth)/2);
     top: $formOffsetFromTop;
     z-index: 11;
     *display: none;
     overflow: scroll;
     overflow-x: hidden;
-    outline: 5px solid rgb(100, 100, 100);
+    border: 5px solid rgb(100, 100, 100);
 
     .headline-box {
         display: flex;
@@ -24,8 +24,8 @@
             font-size: 1.5rem;
             color: rgba(0, 0, 0, 0.7);
             position: fixed;
-            right: calc((100vw - $formWidth)/2 + 3px);
-            top: calc($formOffsetFromTop + 3px);
+            right: calc((100% - $formWidth)/2 + 25px);
+            top: calc($formOffsetFromTop + 8px);
             transition: all 150ms ease-in-out;
             cursor: pointer;
         }
@@ -36,9 +36,14 @@
         }
     }
 
+    h2 {
+        color: rgba(60, 60, 60, 1);
+    }
+
     p {
         margin: 1rem 0;
         color: white;
+        color: rgba(60, 60, 60, 1);
     }
 
     form {
@@ -104,16 +109,16 @@
 
 @media only screen and (max-width: 1200px) {
     .contact {
-        $formWidth: 60vw;
+        $formWidth: 60%;
         $formOffsetFromTop: 6rem;
         width: $formWidth;
-        left: calc((100vw - $formWidth)/2);
+        left: calc((100% - $formWidth)/2);
         top: $formOffsetFromTop;
 
         .headline-box {
             .close-btn {
-                right: calc((100vw - $formWidth)/2 + 3px);
-                top: calc($formOffsetFromTop + 3px);
+                right: calc((100% - $formWidth)/2 + 25px);
+                top: calc($formOffsetFromTop + 8px);
             }
         }
     }
@@ -122,16 +127,16 @@
 
 @media only screen and (max-width: 900px) {
     .contact {
-        $formWidth: 90vw;
+        $formWidth: 90%;
         $formOffsetFromTop: 6rem;
         width: $formWidth;
-        left: calc((100vw - $formWidth)/2);
+        left: calc((100% - $formWidth)/2);
         top: $formOffsetFromTop;
 
         .headline-box {
             .close-btn {
-                right: calc((100vw - $formWidth)/2 + 3px);
-                top: calc($formOffsetFromTop + 3px);
+                right: calc((100% - $formWidth)/2 + 25px);
+                top: calc($formOffsetFromTop + 8px);
             }
         }
     }

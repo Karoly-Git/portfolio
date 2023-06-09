@@ -40,9 +40,9 @@
   background-color: rgba(128, 128, 128, 0.5);
 }
 .switches .current-language {
-  background-color: gray;
+  background-color: rgb(164, 215, 164);
   color: white;
 }
 .switches .current-language:hover {
-  background-color: gray;
+  background-color: rgb(164, 215, 164);
 }/*# sourceMappingURL=switches.css.map */
