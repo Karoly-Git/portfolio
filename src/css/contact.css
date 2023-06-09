@@ -4,7 +4,7 @@
   padding: 2rem;
   background-color: rgb(164, 215, 164);
   position: fixed;
-  left: calc(27.5vw - 0.5rem);
+  left: 27.5vw;
   top: 6rem;
   z-index: 11;
   *display: none;
@@ -22,7 +22,7 @@
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.7);
   position: fixed;
-  right: calc(27.5vw + 3px + 0.5rem);
+  right: calc(27.5vw + 3px);
   top: calc(6rem + 3px);
   transition: all 150ms ease-in-out;
   cursor: pointer;
@@ -95,22 +95,22 @@
 @media only screen and (max-width: 1200px) {
   .contact {
     width: 60vw;
-    left: calc(20vw - 0.5rem);
+    left: 20vw;
     top: 6rem;
   }
   .contact .headline-box .close-btn {
-    right: calc(20vw + 3px + 0.5rem);
+    right: calc(20vw + 3px);
     top: calc(6rem + 3px);
   }
 }
 @media only screen and (max-width: 900px) {
   .contact {
     width: 90vw;
-    left: calc(5vw - 0.5rem);
+    left: 5vw;
     top: 6rem;
   }
   .contact .headline-box .close-btn {
-    right: calc(5vw + 3px + 0.5rem);
+    right: calc(5vw + 3px);
     top: calc(6rem + 3px);
   }
 }

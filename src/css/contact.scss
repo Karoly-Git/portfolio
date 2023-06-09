@@ -6,7 +6,7 @@
     padding: 2rem;
     background-color: rgb(164, 215, 164);
     position: fixed;
-    left: calc((100vw - $formWidth)/2 - 0.5rem);
+    left: calc((100vw - $formWidth)/2);
     top: $formOffsetFromTop;
     z-index: 11;
     *display: none;
@@ -24,7 +24,7 @@
             font-size: 1.5rem;
             color: rgba(0, 0, 0, 0.7);
             position: fixed;
-            right: calc((100vw - $formWidth)/2 + 3px + 0.5rem);
+            right: calc((100vw - $formWidth)/2 + 3px);
             top: calc($formOffsetFromTop + 3px);
             transition: all 150ms ease-in-out;
             cursor: pointer;
@@ -107,12 +107,12 @@
         $formWidth: 60vw;
         $formOffsetFromTop: 6rem;
         width: $formWidth;
-        left: calc((100vw - $formWidth)/2 - 0.5rem);
+        left: calc((100vw - $formWidth)/2);
         top: $formOffsetFromTop;
 
         .headline-box {
             .close-btn {
-                right: calc((100vw - $formWidth)/2 + 3px + 0.5rem);
+                right: calc((100vw - $formWidth)/2 + 3px);
                 top: calc($formOffsetFromTop + 3px);
             }
         }
@@ -125,12 +125,12 @@
         $formWidth: 90vw;
         $formOffsetFromTop: 6rem;
         width: $formWidth;
-        left: calc((100vw - $formWidth)/2 - 0.5rem);
+        left: calc((100vw - $formWidth)/2);
         top: $formOffsetFromTop;
 
         .headline-box {
             .close-btn {
-                right: calc((100vw - $formWidth)/2 + 3px + 0.5rem);
+                right: calc((100vw - $formWidth)/2 + 3px);
                 top: calc($formOffsetFromTop + 3px);
             }
         }
