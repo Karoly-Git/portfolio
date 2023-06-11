@@ -9,7 +9,6 @@
     left: calc((100% - $formWidth)/2);
     top: $formOffsetFromTop;
     z-index: 11;
-    *display: none;
     overflow: scroll;
     overflow-x: hidden;
     border: 5px solid rgb(100, 100, 100);

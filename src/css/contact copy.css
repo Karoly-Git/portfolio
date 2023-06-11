@@ -1,15 +1,16 @@
 .contact {
-  width: 45%;
+  width: 45vw;
   max-height: 90vh;
   padding: 2rem;
-  background-color: rgb(164, 215, 164);
+  background-color: gray;
   position: fixed;
-  left: 27.5%;
-  top: 6rem;
+  left: 27.5vw;
+  top: 3rem;
   z-index: 11;
+  *display: none;
   overflow: scroll;
   overflow-x: hidden;
-  border: 5px solid rgb(100, 100, 100);
+  outline: 5px solid rgb(100, 100, 100);
 }
 .contact .headline-box {
   display: flex;
@@ -21,8 +22,8 @@
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.7);
   position: fixed;
-  right: calc(27.5% + 25px);
-  top: calc(6rem + 8px);
+  right: calc(27.5vw + 3px);
+  top: calc(3rem + 3px);
   transition: all 150ms ease-in-out;
   cursor: pointer;
 }
@@ -30,13 +31,9 @@
   color: white;
   background-color: darkred;
 }
-.contact h2 {
-  color: rgb(60, 60, 60);
-}
 .contact p {
   margin: 1rem 0;
   color: white;
-  color: rgb(60, 60, 60);
 }
 .contact form {
   display: flex;
@@ -85,9 +82,9 @@
 }
 .contact .error {
   display: inline-block;
-  background-color: white;
+  background-color: red;
   padding: 0.25rem 1rem;
-  color: red;
+  color: azure !important;
   font-size: 1rem !important;
 }
 
@@ -95,30 +92,9 @@
   display: none;
 }
 
-@media only screen and (max-width: 1200px) {
-  .contact {
-    width: 60%;
-    left: 20%;
-    top: 6rem;
+@media only screen and (max-width: 550px) {
+  .headline,
+p {
+    *color: white !important;
   }
-  .contact .headline-box .close-btn {
-    right: calc(20% + 25px);
-    top: calc(6rem + 8px);
-  }
-}
-@media only screen and (max-width: 900px) {
-  .contact {
-    width: 90%;
-    left: 5%;
-    top: 6rem;
-  }
-  .contact .headline-box .close-btn {
-    right: calc(5% + 25px);
-    top: calc(6rem + 8px);
-  }
-}
-@media only screen and (max-width: 500px) {
-  .contact {
-    padding: 1rem 0.5rem;
-  }
-}/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact copy.css.map */

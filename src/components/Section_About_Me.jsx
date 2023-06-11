@@ -60,7 +60,7 @@ export default function AboutMe(props) {
                 <div className={`page page-1 ${is2ndPage ? 'moved-to-left' : ''}`}>
                     <section>
                         {props.languages.about_me.description.page1.map(paragraph =>
-                            <p>
+                            <p className='description'>
                                 {paragraph[props.currentLanguage]}
                             </p>
                         )}
@@ -107,7 +107,7 @@ export default function AboutMe(props) {
                 <div className={`page page-2 ${is2ndPage ? 'moved-to-left' : ''}`}>
                     <section>
                         {props.languages.about_me.description.page2.map(paragraph =>
-                            <p>
+                            <p className='description'>
                                 {paragraph[props.currentLanguage]}
                             </p>
                         )}

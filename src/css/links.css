@@ -48,4 +48,14 @@
 .links a .contact-icon:hover,
 .links span .contact-icon:hover {
   color: red;
+}
+
+.get-in-touch .github-icon {
+  color: #FF9900 !important;
+}
+.get-in-touch .linkedin-icon {
+  color: #0A66C2 !important;
+}
+.get-in-touch .youtube-icon {
+  color: red !important;
 }/*# sourceMappingURL=links.css.map */
