@@ -24,7 +24,7 @@ export default function LinksContact(props) {
                         <Whatsapp className="icon contact-icon whatsapp-icon" />
                     </a>
                 </li>
-                <li>
+                <li style={{ display: "none" }}>
                     <span onClick={props.showForm}>
                         <Send className="icon contact-icon send-icon" />
                     </span>

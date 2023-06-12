@@ -23,7 +23,6 @@ export default function Form() {
             mode: 'no-cors',
             headers: {
                 'Content-type': 'application/json',
-
             },
             body: JSON.stringify(data),
         });
