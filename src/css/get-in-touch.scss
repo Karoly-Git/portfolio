@@ -23,7 +23,8 @@
 
         .section-title {
             margin: 1rem 0;
-            font-size: 3rem;
+            font-size: 4rem;
+            text-transform: uppercase;
         }
 
     }
@@ -39,11 +40,14 @@
             padding: 1rem;
             width: 50%;
 
-            .my-email:hover {
-                color: red;
+            .email-item,
+            .location-item {
+                a:hover {
+                    color: red;
+                }
             }
 
-            li:not(li:last-child) {
+            li {
                 margin-bottom: 1rem;
 
                 h2 {
@@ -96,12 +100,6 @@
     .get-in-touch {
         flex-direction: column;
 
-        .top-box {
-            .section-title {
-                font-size: 3rem;
-            }
-        }
-
         .box {
             width: 100%;
         }
@@ -112,20 +110,8 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .get-in-touch {
-        .section-title {
-            font-size: 2rem !important;
-        }
-    }
-}
-
 @media only screen and (max-width: 470px) {
     .get-in-touch {
-        .section-title {
-            line-height: 3rem;
-        }
-
         .bottom-box {
             justify-content: flex-start;
 
@@ -138,14 +124,6 @@
                     display: none;
                 }
             }
-        }
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    .get-in-touch {
-        .section-title {
-            font-size: 1.5rem !important;
         }
     }
 }

@@ -133,9 +133,6 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .about-me header h2 {
-    font-size: 3rem;
-  }
   .about-me header .pagination .sub-pages {
     margin: 0;
   }
@@ -158,16 +155,5 @@
   .about-me .page-1 section:nth-child(1),
 .about-me .page-2 section:nth-child(1) {
     width: 100%;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .about-me header h2 {
-    font-size: 2rem;
-    font-weight: 600;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .about-me header h2 {
-    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=about-me.css.map */

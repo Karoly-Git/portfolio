@@ -66,10 +66,6 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
 
-        h2 {
-            font-size: 3rem !important;
-        }
-
         .page {
             section {
                 padding-top: 1rem !important;
@@ -79,27 +75,10 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .my-projects {
-        h2 {
-            font-size: 2rem !important;
-            font-weight: 600 !important;
-        }
-    }
-}
-
 @media only screen and (max-width: 400px) {
     .my-projects {
         .project-item {
             padding: 0.5rem !important;
-        }
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    .my-projects {
-        h2 {
-            font-size: 1.5rem !important;
         }
     }
 }

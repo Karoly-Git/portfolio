@@ -5,7 +5,7 @@ export default function MyProjects(props) {
     return (
         <section className="section my-projects">
             <header>
-                <h2>
+                <h2 className='section-title'>
                     {props.languages.projects.title[props.currentLanguage]}
                 </h2>
             </header>

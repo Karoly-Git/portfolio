@@ -20,7 +20,7 @@ export default function AboutMe(props) {
     return (
         <section className="section about-me">
             <header>
-                <h2>
+                <h2 className='section-title'>
                     {props.languages.about_me.title[props.currentLanguage]}
                 </h2>
 

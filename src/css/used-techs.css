@@ -43,27 +43,13 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  .used-techs h2 {
-    font-size: 3rem !important;
-  }
   .used-techs .page section {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
 }
-@media only screen and (max-width: 500px) {
-  .used-techs h2 {
-    font-size: 2rem !important;
-    font-weight: 600 !important;
-  }
-}
 @media only screen and (max-width: 400px) {
   .used-techs .tech-item {
     padding: 0.25rem !important;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .used-techs h2 {
-    font-size: 1.5rem !important;
   }
 }/*# sourceMappingURL=used-techs.css.map */

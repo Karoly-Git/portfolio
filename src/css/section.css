@@ -12,7 +12,7 @@
   align-items: center;
   padding: 0 2rem;
 }
-.section header h2 {
+.section header .section-title {
   font-size: 4rem;
   font-weight: 100;
   font-family: "Mina", sans-serif;
@@ -44,4 +44,28 @@
 .section-reverse .page {
   flex-direction: row-reverse;
   justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-title {
+    font-size: 3.5rem !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .section-title {
+    font-size: 3rem !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .section-title {
+    font-size: 2rem !important;
+  }
+  .section-title:not(.get-in-touch .section-title) {
+    font-weight: 600 !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .section-title {
+    font-size: 1.5rem !important;
+  }
 }/*# sourceMappingURL=section.css.map */

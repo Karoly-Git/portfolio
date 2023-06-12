@@ -5,7 +5,7 @@ export default function UsedTechs(props) {
     return (
         <section className="section section-reverse used-techs">
             <header>
-                <h2>
+                <h2 className='section-title'>
                     {props.languages.used_techs.title[props.currentLanguage]}
                 </h2>
             </header>

@@ -21,7 +21,8 @@
 }
 .get-in-touch .top-box .section-title {
   margin: 1rem 0;
-  font-size: 3rem;
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 .get-in-touch .bottom-box {
   display: flex;
@@ -34,21 +35,22 @@
   padding: 1rem;
   width: 50%;
 }
-.get-in-touch .bottom-box .contact-list .my-email:hover {
+.get-in-touch .bottom-box .contact-list .email-item a:hover,
+.get-in-touch .bottom-box .contact-list .location-item a:hover {
   color: red;
 }
-.get-in-touch .bottom-box .contact-list li:not(li:last-child) {
+.get-in-touch .bottom-box .contact-list li {
   margin-bottom: 1rem;
 }
-.get-in-touch .bottom-box .contact-list li:not(li:last-child) h2 {
+.get-in-touch .bottom-box .contact-list li h2 {
   margin-bottom: 0.25rem;
 }
-.get-in-touch .bottom-box .contact-list li:not(li:last-child) a {
+.get-in-touch .bottom-box .contact-list li a {
   text-decoration: none;
 }
-.get-in-touch .bottom-box .contact-list li:not(li:last-child) h2,
-.get-in-touch .bottom-box .contact-list li:not(li:last-child) a,
-.get-in-touch .bottom-box .contact-list li:not(li:last-child) div {
+.get-in-touch .bottom-box .contact-list li h2,
+.get-in-touch .bottom-box .contact-list li a,
+.get-in-touch .bottom-box .contact-list li div {
   color: rgb(220, 229, 236);
 }
 .get-in-touch .bottom-box .contact-list .find-me-item .social-links li:last-child {
@@ -75,9 +77,6 @@
   .get-in-touch {
     flex-direction: column;
   }
-  .get-in-touch .top-box .section-title {
-    font-size: 3rem;
-  }
   .get-in-touch .box {
     width: 100%;
   }
@@ -85,15 +84,7 @@
     display: none;
   }
 }
-@media only screen and (max-width: 500px) {
-  .get-in-touch .section-title {
-    font-size: 2rem !important;
-  }
-}
 @media only screen and (max-width: 470px) {
-  .get-in-touch .section-title {
-    line-height: 3rem;
-  }
   .get-in-touch .bottom-box {
     justify-content: flex-start;
   }
@@ -104,10 +95,5 @@
 .get-in-touch .bottom-box .contact-list .location-item,
 .get-in-touch .bottom-box .contact-list .find-me-item h2 {
     display: none;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .get-in-touch .section-title {
-    font-size: 1.5rem !important;
   }
 }/*# sourceMappingURL=get-in-touch.css.map */

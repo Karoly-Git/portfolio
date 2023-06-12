@@ -12,11 +12,12 @@
         align-items: center;
         padding: 0 2rem;
 
-        h2 {
+        .section-title {
             font-size: 4rem;
             font-weight: 100;
             font-family: 'Mina', sans-serif;
         }
+
     }
 
     main {
@@ -52,5 +53,35 @@
     .page {
         flex-direction: row-reverse;
         justify-content: flex-end;
+    }
+}
+
+
+// Section-Title break points
+@media only screen and(max-width: 1200px) {
+    .section-title {
+        font-size: 3.5rem !important;
+    }
+}
+
+@media only screen and(max-width: 800px) {
+    .section-title {
+        font-size: 3rem !important;
+    }
+}
+
+@media only screen and(max-width: 500px) {
+    .section-title {
+        font-size: 2rem !important;
+    }
+
+    .section-title:not(.get-in-touch .section-title) {
+        font-weight: 600 !important;
+    }
+}
+
+@media only screen and(max-width: 350px) {
+    .section-title {
+        font-size: 1.5rem !important;
     }
 }
