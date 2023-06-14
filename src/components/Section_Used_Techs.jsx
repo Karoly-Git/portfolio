@@ -13,8 +13,8 @@ export default function UsedTechs(props) {
             <main>
                 <div className="page">
                     <section>
-                        {props.languages.used_techs.description.map(paragraph =>
-                            <p className='description'>
+                        {props.languages.used_techs.description.map((paragraph, index) =>
+                            <p key={index + "used-techs"} className='description'>
                                 {paragraph[props.currentLanguage]}
                             </p>
                         )}

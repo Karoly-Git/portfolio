@@ -5,7 +5,7 @@ import SocialLinks from './Links_Social'
 
 export default function GetInTouch(props) {
     return (
-        <section className={`get-in-touch ${props.isDarkMode ? 'dark-mode' : ''}`}>
+        <section className="get-in-touch">
             <div className='box text-box'>
                 <section className='top-box'>
                     <h2 className='my-name'>

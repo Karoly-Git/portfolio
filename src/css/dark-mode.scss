@@ -73,6 +73,31 @@
         }
     }
 
+    .hello-everyone {
+        background-color: rgba(0, 0, 0, 0.8);
+
+        .section-title {
+            color: rgb(164, 215, 164);
+        }
+
+        .icon {
+            color: rgb(164, 215, 164) !important;
+        }
+
+        .boxB:nth-child(2) {
+            .icon {
+                background-color: rgb(56, 56, 56);
+            }
+        }
+
+        .boxB:last-child {
+            .icon {
+                color: rgb(82, 161, 229) !important;
+                background-color: rgb(48, 48, 48);
+            }
+        }
+    }
+
     .showcase {
         background-color: rgb(133, 133, 133);
 

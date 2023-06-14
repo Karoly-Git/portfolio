@@ -13,8 +13,8 @@ export default function MyProjects(props) {
             <main>
                 <div className="page">
                     <section>
-                        {props.languages.projects.description.map(paragraph =>
-                            <p className='description'>
+                        {props.languages.projects.description.map((paragraph, index) =>
+                            <p key={index + "projects"} className='description'>
                                 {paragraph[props.currentLanguage]}
                             </p>
                         )}

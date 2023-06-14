@@ -47,6 +47,22 @@
   background-color: rgb(133, 133, 133);
   color: black;
 }
+.dark-mode .hello-everyone {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dark-mode .hello-everyone .section-title {
+  color: rgb(164, 215, 164);
+}
+.dark-mode .hello-everyone .icon {
+  color: rgb(164, 215, 164) !important;
+}
+.dark-mode .hello-everyone .boxB:nth-child(2) .icon {
+  background-color: rgb(56, 56, 56);
+}
+.dark-mode .hello-everyone .boxB:last-child .icon {
+  color: rgb(82, 161, 229) !important;
+  background-color: rgb(48, 48, 48);
+}
 .dark-mode .showcase {
   background-color: rgb(133, 133, 133);
 }

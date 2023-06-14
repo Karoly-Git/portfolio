@@ -63,9 +63,4 @@
   .section-title:not(.get-in-touch .section-title) {
     font-weight: 600 !important;
   }
-}
-@media only screen and (max-width: 350px) {
-  .section-title {
-    font-size: 1.5rem !important;
-  }
 }/*# sourceMappingURL=section.css.map */
