@@ -95,7 +95,7 @@ export const languages = {
         },
         description: [
             {
-                eng: 'Now, I invite you to explore some of my web development jobs, which showcases my proficiency in designing and developing websites with an unwavering commitment to delivering superior outcomes.',
+                eng: 'Now, I invite you to explore some of my web development jobs, which showcases my proficiency in developing websites with an unwavering commitment to delivering superior outcomes.',
                 hun: 'Ebben a szegmensben arra kérem Önt, hogy fedezze fel a webfejlesztői munkáim egy részét, amely bemutatja a webhelyek tervezésében és fejlesztésében való jártasságomat, a kiváló eredmények elérése iránti megingathatatlan elkötelezettséggel.',
                 pol: 'W tym segmencie zapraszam do zapoznania się z wybranymi moimi ofertami pracy w zakresie tworzenia stron internetowych, które pokazują moją biegłość w projektowaniu i tworzeniu stron internetowych z niezachwianym zaangażowaniem w dostarczanie doskonałych wyników.'
             },
