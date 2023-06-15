@@ -95,8 +95,8 @@ export const languages = {
         },
         description: [
             {
-                eng: 'Now, I invite you to explore some of my web development jobs, which showcases my proficiency in developing websites with an unwavering commitment to delivering superior outcomes. You can open the websites by clicking on images.',
-                hun: 'Most arra invitállak, hogy vess egy pillantást a munkáim egy részére.',
+                eng: 'Now, I invite you to explore some of my web development jobs, which showcases my proficiency in developing websites with an unwavering commitment to delivering superior outcomes. You can open the project details and websites by clicking on images.',
+                hun: 'Most arra invitállak, hogy vess egy pillantást a munkáim egy részére. A projektrészletek és a honlapok megnyitásához kattints a képekre.',
                 pol: 'W tym segmencie zapraszam do zapoznania się z wybranymi moimi ofertami pracy w zakresie tworzenia stron internetowych, które pokazują moją biegłość w projektowaniu i tworzeniu stron internetowych z niezachwianym zaangażowaniem w dostarczanie doskonałych wyników.'
             },
             {
