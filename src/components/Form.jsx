@@ -26,7 +26,6 @@ export default function Form() {
             },
             body: JSON.stringify(data),
         });
-
     };
 
     return (

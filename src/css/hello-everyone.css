@@ -61,7 +61,7 @@
   font-size: 2rem;
   color: white;
 }
-.hello-everyone .boxB:nth-child(2) h3:nth-child(2) {
+.hello-everyone .boxB:nth-child(2) .my-title {
   font-family: "Mina", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1.25rem;
@@ -122,7 +122,7 @@
   .hello-everyone .boxB:nth-child(2) h3 {
     font-size: 1.5rem;
   }
-  .hello-everyone .boxB:nth-child(2) h3:nth-child(2) {
+  .hello-everyone .boxB:nth-child(2) .my-title {
     font-size: 1.25rem;
     margin-bottom: 1rem;
   }

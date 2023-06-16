@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { config } from './js/config'
 import Maintenance from './components/Maintenance_Section'
 import Website from './components/Website'
@@ -9,6 +9,7 @@ import Website from './components/Website'
 */
 
 export default function App() {
+
   return (
     <>
       {config.isMaintenanceMode && <Maintenance />}

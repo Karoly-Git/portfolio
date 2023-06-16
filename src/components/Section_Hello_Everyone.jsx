@@ -5,11 +5,9 @@ import { TfiCheckBox as CheckBoxIcon } from 'react-icons/tfi'
 import helloImage from '../img/me1.png'
 
 export default function HelloEveryone(props) {
-
+    const [isLoaded, setIsLoaded] = useState(false);
     const [stripHeight, setStripHight] = useState(0);
     const [stripMarginTop, setStriMarginTop] = useState(0);
-    const [profileMarginTop, setProfileMarginTop] = useState(0);
-
 
     const setSize = () => {
         let height = document.querySelector(".boxB:nth-child(2)").clientHeight;
@@ -20,6 +18,7 @@ export default function HelloEveryone(props) {
 
     window.addEventListener('load', () => {
         setSize();
+        setIsLoaded(true);
     });
 
     window.addEventListener('resize', () => {
@@ -29,7 +28,10 @@ export default function HelloEveryone(props) {
     return (
         <section className="section hello-everyone">
             <div className="containerA">
-                <div className="boxA">
+                {!isLoaded && <div className="boxA">
+                    <iframe src="https://giphy.com/embed/YpqWbjNDq8y4DVu4BO" width="100%" height="478" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                </div>}
+                {isLoaded && <div className="boxA">
                     <div
                         className="boxA-item side-boxA"
                         style={{ height: `${stripHeight}px`, marginTop: `${stripMarginTop}px` }}
@@ -39,14 +41,14 @@ export default function HelloEveryone(props) {
                         className="boxA-item profile"
                         style={{ marginTop: `${stripMarginTop - ((200 - stripHeight) / 2)}px` }}
                     >
-                        <img src={helloImage} alt="" />
+                        <img src={helloImage} alt="Karoly Hornyak Web Developer" />
                     </div>
                     <div
                         className="boxA-item side-boxA"
                         style={{ height: `${stripHeight}px`, marginTop: `${stripMarginTop}px` }}
                     >
                     </div>
-                </div>
+                </div>}
                 <div className="boxC">
                     <ul>
                         <li>
@@ -69,9 +71,9 @@ export default function HelloEveryone(props) {
                     <h3>
                         {props.languages.my_name[props.currentLanguage]}
                     </h3>
-                    <h3>
+                    <h1 className='my-title'>
                         {props.languages.my_title[props.currentLanguage]}
-                    </h3>
+                    </h1>
                     <SocialLinks />
                 </div>
                 <div className="boxB">

@@ -74,7 +74,7 @@
             color: white;
         }
 
-        h3:nth-child(2) {
+        .my-title {
             font-family: 'Mina', sans-serif;
             font-size: 1.5rem;
             margin-bottom: 1.25rem;
@@ -151,11 +151,10 @@
                 font-size: 1.5rem;
             }
 
-            h3:nth-child(2) {
+            .my-title {
                 font-size: 1.25rem;
                 margin-bottom: 1rem;
             }
-
         }
     }
 }
