@@ -33,7 +33,7 @@ export const showcases = {
                 src: interesting_003,
                 alt: "Friderikusz Podcast",
                 link: "https://www.youtube.com/watch?v=p3EEIwEIlMs&t=958s",
-                title: "AI - Scaring or promising",
+                title: "AI - Ígéretes vagy félelmetes?",
                 date: new Date("2023.03.23")
             },
             {
