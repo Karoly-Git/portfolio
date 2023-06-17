@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a0dce6a6.css",
-    "main.js": "/static/js/main.d21c1483.js",
+    "main.js": "/static/js/main.bd4d0a4f.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/interesting_001.png": "/static/media/interesting_001.235dc8697344bd008e17.png",
     "static/media/interesting_004.png": "/static/media/interesting_004.2fa36babbd281202eca8.png",
@@ -15,8 +15,8 @@
     "static/media/youtube-js-001.png": "/static/media/youtube-js-001.149cb7cc14df02890d48.png",
     "static/media/img-1.jpg": "/static/media/img-1.2d768267478bff86aaef.jpg",
     "static/media/curtain.jpg": "/static/media/curtain.8a8228e53eeb2090e4b9.jpg",
-    "static/media/youtube-css-001.png": "/static/media/youtube-css-001.d41ff730e82d3258796e.png",
     "static/media/youtube-react-001.png": "/static/media/youtube-react-001.7840a1f45e4f66c8f0d7.png",
+    "static/media/youtube-css-001.png": "/static/media/youtube-css-001.66ecf3dfae73658afadb.png",
     "static/media/youtube-js-002.png": "/static/media/youtube-js-002.313fc25c9d2d7fcb6ed1.png",
     "static/media/barber.jpg": "/static/media/barber.f283f2299f06f75f6f9b.jpg",
     "static/media/img-03.jpg": "/static/media/img-03.a1af395cc81ac99ee1d0.jpg",
@@ -35,11 +35,11 @@
     "static/media/css.svg": "/static/media/css.a88388a5fd9dd92d1a3ec90a6bf4d153.svg",
     "static/media/html.svg": "/static/media/html.d8ad7035fd5ef22f285785d221de81c9.svg",
     "main.a0dce6a6.css.map": "/static/css/main.a0dce6a6.css.map",
-    "main.d21c1483.js.map": "/static/js/main.d21c1483.js.map",
+    "main.bd4d0a4f.js.map": "/static/js/main.bd4d0a4f.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a0dce6a6.css",
-    "static/js/main.d21c1483.js"
+    "static/js/main.bd4d0a4f.js"
   ]
 }
