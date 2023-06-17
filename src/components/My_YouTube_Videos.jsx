@@ -1,6 +1,7 @@
 import { React, useState } from 'react'
 import MoreBtn from './Btn_More'
 import { BsInfoCircle as InfoIcon } from 'react-icons/bs';
+import { showcases } from '../js/showcases'
 
 export default function YouTubeVideos(props) {
     const [newIconDirection, setNewIconDirection] = useState('down')
@@ -24,8 +25,21 @@ export default function YouTubeVideos(props) {
                 />
             </header>
             <main className={`content ${isShowCaseOpen ? 'open' : ''}`}>
-                {false && <InfoIcon className='icon' title="Videos' language is Hungarian" />}
-                <iframe src="https://www.youtube.com/embed/z_8kjPVnDPo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                {showcases.youtube.map((item, index) =>
+                    <a
+                        className="item"
+                        href={item.link}
+                        target="_blank"
+                    >
+                        <img
+                            key={item.id}
+                            src={item.src}
+                            alt={item.alt}
+                        />
+                        <h5>{item.title}</h5>
+                        <h6>{item.sec_title}</h6>
+                    </a>
+                )}
             </main>
         </section >
     )

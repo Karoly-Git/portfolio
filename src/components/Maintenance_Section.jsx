@@ -16,7 +16,9 @@ export default function Maintenance() {
                         title='tool-giphy-unique'
                         src="https://giphy.com/embed/h8lH6itZv19SEGhf5A"
                         className="tool-giphy giphy-embed"
-                        allowFullScreen>
+                        allowFullScreen
+                        SameSite="None"
+                    >
                     </iframe>
                 </div>
                 <div className="text-box">

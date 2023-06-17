@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
 import MoreBtn from './Btn_More'
+import { showcases } from '../js/showcases'
 
 export default function InterestingThings(props) {
     const [newIconDirection, setNewIconDirection] = useState('down')
@@ -23,10 +24,20 @@ export default function InterestingThings(props) {
                 />
             </header>
             <main className={`content ${isShowCaseOpen ? 'open' : ''}`}>
-                <iframe src="https://www.youtube.com/embed/XiQkeWOFwmk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                <iframe src="https://www.youtube.com/embed/UXHoWNfjJYM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                <iframe src="https://www.youtube.com/embed/p3EEIwEIlMs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                <iframe src="https://www.youtube.com/embed/EjiFEawYn88" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                {showcases.interesting.map((item, index) =>
+                    <a
+                        className="item"
+                        href={item.link}
+                        target="_blank"
+                    >
+                        <img
+                            key={item.id}
+                            src={item.src}
+                            alt={item.alt}
+                        />
+                        <h5>{item.title}</h5>
+                    </a>
+                )}
             </main>
         </section>
     )

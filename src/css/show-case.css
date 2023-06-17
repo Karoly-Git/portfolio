@@ -29,11 +29,38 @@
   overflow-y: hidden;
   padding: 0 0.5rem;
 }
-.showcase .content iframe {
+.showcase .content .item {
   border: 3px solid rgba(255, 255, 255, 0.5);
   border: none;
-  height: 12rem;
   padding: 1rem 0.5rem;
+  min-width: 15rem;
+  max-width: 15rem;
+  text-decoration: none;
+}
+.showcase .content .item img {
+  width: 100%;
+  transition: all 250ms ease-in-out;
+}
+.showcase .content .item h5,
+.showcase .content .item h6 {
+  color: white;
+  transition: all 250ms ease-in-out;
+}
+.showcase .content .item h5 {
+  font-size: 1rem;
+}
+.showcase .content .item h6 {
+  font-size: 0.85rem;
+}
+.showcase .content .item:hover img {
+  scale: 1.08;
+}
+.showcase .content .item:hover h5,
+.showcase .content .item:hover h6 {
+  color: #fff200;
+}
+.showcase .content .item:hover h5 {
+  margin-top: 10px;
 }
 .showcase ::-webkit-scrollbar {
   width: 10px;

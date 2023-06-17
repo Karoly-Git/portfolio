@@ -27,19 +27,49 @@
         display: flex;
         height: 0;
         transition: height 350ms ease-in-out;
-        //justify-content: space-evenly;
-        //padding: 0 2rem;
-        //margin-top: 2rem;
-        //margin-bottom: 2rem;
         overflow: scroll;
         overflow-y: hidden;
         padding: 0 0.5rem;
 
-        iframe {
+        .item {
             border: 3px solid rgba(255, 255, 255, 0.5);
             border: none;
-            height: 12rem;
             padding: 1rem 0.5rem;
+            min-width: 15rem;
+            max-width: 15rem;
+            text-decoration: none;
+
+            img {
+                width: 100%;
+                transition: all 250ms ease-in-out;
+            }
+
+            h5,
+            h6 {
+                color: white;
+                transition: all 250ms ease-in-out;
+            }
+
+            h5 {
+                font-size: 1rem;
+            }
+
+            h6 {
+                font-size: 0.85rem;
+            }
+        }
+
+        .item:hover img {
+            scale: 1.08;
+        }
+
+        .item:hover h5,
+        .item:hover h6 {
+            color: #fff200;
+        }
+
+        .item:hover h5 {
+            margin-top: 10px;
         }
 
     }

@@ -29,7 +29,16 @@ export default function HelloEveryone(props) {
         <section className="section hello-everyone">
             <div className="containerA">
                 {!isLoaded && <div className="boxA">
-                    <iframe src="https://giphy.com/embed/YpqWbjNDq8y4DVu4BO" width="100%" height="478" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+                    {false && <iframe
+                        src="https://giphy.com/embed/YpqWbjNDq8y4DVu4BO"
+                        width="100%"
+                        height="478"
+                        frameBorder="0"
+                        className="giphy-embed"
+                        allowFullScreen
+                        SameSite="None"
+                    >
+                    </iframe>}
                 </div>}
                 {isLoaded && <div className="boxA">
                     <div

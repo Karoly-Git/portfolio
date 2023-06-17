@@ -7,7 +7,9 @@ export default function ServerBox() {
                 title='server-giphy-unique'
                 src="https://giphy.com/embed/VX7yEoXAFf8as"
                 className="server-giphy giphy-embed"
-                allowFullScreen>
+                allowFullScreen
+                SameSite="None"
+            >
             </iframe>
         </div>
     )
