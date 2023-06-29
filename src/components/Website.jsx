@@ -59,19 +59,19 @@ export default function Website() {
                             }
                         />
                         <Route
-                            path='*'
+                            path='/*'
                             element={
                                 <h1>Page not found</h1>
                             }
                         />
                         <Route
-                            path='/portfolio/project-details'
+                            path='/project-details'
                             element={
                                 <ProjectDetails />
                             }
                         />
                         <Route
-                            path='/portfolio/coming-soon'
+                            path='/coming-soon'
                             element={
                                 <ComingSoon />
                             }
