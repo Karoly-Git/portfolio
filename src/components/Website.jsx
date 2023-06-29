@@ -59,7 +59,7 @@ export default function Website() {
                             }
                         />
                         <Route
-                            path='/*'
+                            path='*'
                             element={
                                 <h1>Page not found</h1>
                             }

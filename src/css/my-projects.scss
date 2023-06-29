@@ -23,7 +23,7 @@
                     width: 48%;
                     margin-bottom: 1rem;
                     padding: 1rem;
-                    transition: scale 150ms ease-in-out;
+                    transition: all 250ms ease-in-out;
                     text-decoration: none;
 
                     .box {
@@ -33,17 +33,26 @@
                         height: 100%;
                     }
 
-                    span {
-                        height: 20px;
-                        margin-top: -20px;
+                    .box-name {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 2rem;
+                        margin-top: -2rem;
                         background-color: rgba(5, 0, 0, 0.5);
-                        text-align: center;
                         color: white;
+                        opacity: 0;
+                        transition: all 250ms ease-in-out;
+                        font-size: 1.25rem;
                     }
                 }
 
                 .project-link:hover {
-                    scale: 1.4;
+                    padding: 2px;
+                }
+
+                .project-link:hover .box-name {
+                    opacity: 100;
                 }
             }
         }

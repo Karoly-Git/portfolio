@@ -39,8 +39,9 @@ export default function MyProjects(props) {
                                             src={tech.img.indexSrc}
                                             alt={tech.name}
                                         />
-                                        <span>
-                                            {tech.box_name}                                        </span>
+                                        <span className='box-name'>
+                                            {tech.box_name}
+                                        </span>
                                     </div>
                                 </a>
                             )}
