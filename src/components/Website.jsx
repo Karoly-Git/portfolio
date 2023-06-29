@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Home'
 import ProjectDetails from './Page_Project_Details'
 import GetInTouch from './Section_Get_In_Touch'
