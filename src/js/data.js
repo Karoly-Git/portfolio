@@ -52,6 +52,7 @@ const data = {
             id: 1,
             status: 'Live',
             name: 'Sparkling Willo Photography',
+            box_name: 'Photographer',
             img: {
                 indexSrc: sparklingWillo,
                 alt: 'spw-img',
@@ -75,6 +76,7 @@ const data = {
             id: 2,
             status: 'Live',
             name: 'Mary Varrodája',
+            box_name: 'Dressmaker',
             img: {
                 indexSrc: maryVarrodaja,
                 alt: 'mary-varrodaja-img',
@@ -98,6 +100,7 @@ const data = {
             id: 3,
             status: 'In development',
             name: 'Paris Barber',
+            box_name: 'Barber',
             img: {
                 indexSrc: parisBarber,
                 alt: 'paris-barber-img',
@@ -117,6 +120,7 @@ const data = {
             id: 4,
             status: 'In development',
             name: 'Curtain Master',
+            box_name: 'Home decor',
             img: {
                 indexSrc: curtainMaster,
                 alt: 'curtain-master-img',

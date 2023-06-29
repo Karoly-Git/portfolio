@@ -1,6 +1,7 @@
 import { React, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Home'
+import ProjectDetails from './Page_Project_Details'
 import GetInTouch from './Section_Get_In_Touch'
 import '../css/website.css'
 import { languages } from '../js/languages'
@@ -60,6 +61,12 @@ export default function Website() {
                             path='*'
                             element={
                                 <h1>Page not found</h1>
+                            }
+                        />
+                        <Route
+                            path='/project-details'
+                            element={
+                                <ProjectDetails />
                             }
                         />
                     </Routes>

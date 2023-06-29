@@ -120,6 +120,11 @@ export const languages = {
                 pol: 'Mam nadzieję, że przeglądanie mojego portfolio sprawiło Ci przyjemność i że moje prace Cię zainspirowały. Jeśli masz jakieś pytania lub chciałbyś przedyskutować potencjalny projekt, nie wahaj dotrzeć dla mnie.'
             },
         ],
+        more_projects_btn: {
+            eng: 'More projects',
+            hun: 'Tovább',
+            pol: 'Więcej projektów',
+        },
     },
     about_me: {
         title: {

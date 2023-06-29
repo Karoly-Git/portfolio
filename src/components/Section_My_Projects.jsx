@@ -1,5 +1,8 @@
 import React from 'react'
 import data from '../js/data'
+import { MdExpandMore as IconMore } from 'react-icons/md';
+
+const height = 100;
 
 export default function MyProjects(props) {
     return (
@@ -23,20 +26,30 @@ export default function MyProjects(props) {
                     {!false && <section>
                         <div className="project-container">
                             {data.projects.map((tech, index) =>
-                                <div key={index + tech.name} className="project-item">
-                                    <a
-                                        href={tech.website}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
+                                <a
+                                    className="project-link"
+                                    key={index + tech.name}
+                                    href={tech.website}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <div className='box'>
                                         <img
                                             className="tech-icon"
                                             src={tech.img.indexSrc}
                                             alt={tech.name}
                                         />
-                                    </a>
-                                </div>
+                                        <span>
+                                            {tech.box_name}                                        </span>
+                                    </div>
+                                </a>
                             )}
+                            <p>
+                                <span className='btn function-btn'>
+                                    {props.languages.projects.more_projects_btn[props.currentLanguage]}
+                                    <IconMore className='icon right' />
+                                </span>
+                            </p>
                         </div>
                     </section>}
                 </div>
