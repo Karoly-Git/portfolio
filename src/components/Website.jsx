@@ -65,13 +65,13 @@ export default function Website() {
                             }
                         />
                         <Route
-                            path='/project-details'
+                            path='/#/project-details'
                             element={
                                 <ProjectDetails />
                             }
                         />
                         <Route
-                            path='/coming-soon'
+                            path='/#/coming-soon'
                             element={
                                 <ComingSoon />
                             }
