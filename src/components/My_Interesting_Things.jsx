@@ -27,11 +27,11 @@ export default function InterestingThings(props) {
                 {showcases.interesting.map((item, index) =>
                     <a
                         className="item"
+                        key={item.id}
                         href={item.link}
                         target="_blank"
                     >
                         <img
-                            key={item.id}
                             src={item.src}
                             alt={item.alt}
                         />

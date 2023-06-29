@@ -33,7 +33,7 @@ export const showcases = {
                 src: interesting_003,
                 alt: "Friderikusz Podcast",
                 link: "https://www.youtube.com/watch?v=p3EEIwEIlMs&t=958s",
-                title: "AI - Ígéretes vagy félelmetes?",
+                title: "AI - Promising or scaring?",
                 date: new Date("2023.03.23")
             },
             {
@@ -41,7 +41,7 @@ export const showcases = {
                 src: interesting_004,
                 alt: "Innovatív hírek",
                 link: "https://www.youtube.com/watch?v=EjiFEawYn88&t=408s",
-                title: "Utazás az univerzum szélére ... és vissza",
+                title: "Journey to the edge of the universe... and back",
                 date: new Date("2021.05.29")
             },
         ],
@@ -78,7 +78,7 @@ export const showcases = {
                 date: new Date("")
             },
             {
-                id: "youtube" + 3,
+                id: "youtube" + 4,
                 src: youtube_004,
                 alt: "Miért nem működik",
                 link: "https://www.youtube.com/channel/UC_NS9-02WvPjZpvKqkJf4vQ",

@@ -5,6 +5,7 @@ import ProjectDetails from './Page_Project_Details'
 import GetInTouch from './Section_Get_In_Touch'
 import '../css/website.css'
 import { languages } from '../js/languages'
+import ComingSoon from './Coming_Soon'
 
 export default function Website() {
 
@@ -67,6 +68,12 @@ export default function Website() {
                             path='/project-details'
                             element={
                                 <ProjectDetails />
+                            }
+                        />
+                        <Route
+                            path='/coming-soon'
+                            element={
+                                <ComingSoon />
                             }
                         />
                     </Routes>

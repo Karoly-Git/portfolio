@@ -112,7 +112,8 @@ const data = {
                     labels.NodeJs
                 ],
             projectName: "Barber's shop website",
-            website: "http://parisbarber.co.uk",
+            //website: "http://parisbarber.co.uk",
+            website: "http://webdevme.co.uk/coming-soon",
             github: "https://github.com/Karoly-Git",
             description: [],
         },
@@ -132,7 +133,8 @@ const data = {
                     labels.NodeJs
                 ],
             projectName: "Curtain webshop",
-            website: "https://curtainmaster.co.uk/",
+            //website: "https://curtainmaster.co.uk/",
+            website: "http://webdevme.co.uk/coming-soon",
             github: "https://github.com/Karoly-Git",
             description: [],
         },

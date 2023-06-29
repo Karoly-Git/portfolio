@@ -28,11 +28,11 @@ export default function YouTubeVideos(props) {
                 {showcases.youtube.map((item, index) =>
                     <a
                         className="item"
+                        key={item.id}
                         href={item.link}
                         target="_blank"
                     >
                         <img
-                            key={item.id}
                             src={item.src}
                             alt={item.alt}
                         />
