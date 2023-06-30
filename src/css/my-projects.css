@@ -95,4 +95,20 @@
   .my-projects .project-link {
     padding: 0.5rem !important;
   }
+  .my-projects .project-link:hover {
+    padding: 2px !important;
+  }
+}
+@media only screen and (max-width: 400px) and (max-width: 350px) {
+  .my-projects .page section .project-container .project-link .box-name {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 400px) and (max-width: 400px) {
+  .my-projects .project-link {
+    padding: 2px !important;
+  }
+  .my-projects .project-link:hover {
+    padding: unset;
+  }
 }/*# sourceMappingURL=my-projects.css.map */

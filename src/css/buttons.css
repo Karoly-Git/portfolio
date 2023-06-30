@@ -81,6 +81,7 @@
   width: 13rem;
   padding: 0.5rem;
   background-color: black;
+  background-color: rgb(193, 155, 108);
   color: white;
   border: 2px solid gray;
   font-family: "Share Tech", sans-serif;
@@ -136,4 +137,17 @@
 
 .scroll-to-top:hover {
   color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .function-btn {
+    scale: 0.8;
+    margin-left: -20px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .function-btn {
+    scale: 0.7;
+    margin-left: -32px;
+  }
 }/*# sourceMappingURL=buttons.css.map */
