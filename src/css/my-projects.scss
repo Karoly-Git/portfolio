@@ -3,6 +3,10 @@
         section {
             p {
                 width: unset !important;
+
+                a {
+                    text-decoration: none;
+                }
             }
 
             .project-container {
@@ -63,6 +67,22 @@
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .my-projects {
+        .page {
+            section {
+                .project-container {
+                    .project-link {
+                        .box-name {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .my-projects {
         .page {
@@ -70,6 +90,14 @@
 
             section {
                 width: 100% !important;
+
+                .project-container {
+                    .project-link {
+                        .box-name {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
             }
 
             section:nth-child(1) {
@@ -94,6 +122,22 @@
             section {
                 padding-top: 1rem !important;
                 padding-bottom: 1rem !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .my-projects {
+        .page {
+            section {
+                .project-container {
+                    .project-link {
+                        .box-name {
+                            font-size: 1rem;
+                        }
+                    }
+                }
             }
         }
     }

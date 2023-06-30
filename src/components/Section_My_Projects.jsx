@@ -46,10 +46,16 @@ export default function MyProjects(props) {
                                 </a>
                             )}
                             <p>
-                                <span className='btn function-btn'>
-                                    {props.languages.projects.more_projects_btn[props.currentLanguage]}
-                                    <IconMore className='icon right' />
-                                </span>
+                                <a
+                                    href="https://github.com/Karoly-Git"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span className='btn function-btn'>
+                                        {props.languages.projects.more_projects_btn[props.currentLanguage]}
+                                        <IconMore className='icon right' />
+                                    </span>
+                                </a>
                             </p>
                         </div>
                     </section>}
