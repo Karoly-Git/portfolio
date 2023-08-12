@@ -36,11 +36,11 @@ export default function Form() {
             <input type="tel" placeholder="Phone" name="sender_phone" {...register('senderPhone')}></input>
 
             <input type="text" placeholder="Subject" name="subject" {...register('subject')}></input>
+
             {errors.senderEmail && <span><p className='error'>{errors.senderEmail?.message}</p></span>}
-
             <input type="email" placeholder="Email*" name="sender_email" {...register('senderEmail')}></input>
-            {errors.text && <span><p className='error'>{errors.text?.message}</p></span>}
 
+            {errors.text && <span><p className='error'>{errors.text?.message}</p></span>}
             <textarea placeholder="Type your message here*" name="message" {...register('text')}></textarea>
 
             <button className='download-link' type="submit" name="submit">
