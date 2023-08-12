@@ -23,7 +23,7 @@ export default function MyProjects(props) {
                         )}
                     </section>
 
-                    {!false && <section>
+                    <section>
                         <div className="project-container">
                             {data.projects.map((tech, index) =>
                                 <a
@@ -40,7 +40,7 @@ export default function MyProjects(props) {
                                             alt={tech.name}
                                         />
                                         <span className='box-name'>
-                                            {tech.box_name}
+                                            {tech.box_name[props.currentLanguage]}
                                         </span>
                                     </div>
                                 </a>
@@ -58,7 +58,7 @@ export default function MyProjects(props) {
                                 </a>
                             </p>
                         </div>
-                    </section>}
+                    </section>
                 </div>
             </main>
         </section>

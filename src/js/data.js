@@ -52,7 +52,11 @@ const data = {
             id: 1,
             status: 'Live',
             name: 'Sparkling Willo Photography',
-            box_name: 'Photographer',
+            box_name: {
+                eng: 'Photographer',
+                hun: 'Fényképész',
+                pol: 'Fotograf',
+            },
             img: {
                 indexSrc: sparklingWillo,
                 alt: 'spw-img',
@@ -76,7 +80,11 @@ const data = {
             id: 2,
             status: 'Live',
             name: 'Mary Varrodája',
-            box_name: 'Dressmaker',
+            box_name: {
+                eng: 'Dressmaker',
+                hun: 'Varrónő',
+                pol: 'Krawcowa',
+            },
             img: {
                 indexSrc: maryVarrodaja,
                 alt: 'mary-varrodaja-img',
@@ -100,7 +108,11 @@ const data = {
             id: 3,
             status: 'In development',
             name: 'Paris Barber',
-            box_name: 'Barber',
+            box_name: {
+                eng: 'Barber',
+                hun: 'Fodrász',
+                pol: 'Fryzjer',
+            },
             img: {
                 indexSrc: parisBarber,
                 alt: 'paris-barber-img',
@@ -122,7 +134,11 @@ const data = {
             id: 4,
             status: 'In development',
             name: 'Curtain Master',
-            box_name: 'Home decor',
+            box_name: {
+                eng: 'Home decor',
+                hun: 'Lakás dekor',
+                pol: 'Wystrój domu',
+            },
             img: {
                 indexSrc: curtainMaster,
                 alt: 'curtain-master-img',
