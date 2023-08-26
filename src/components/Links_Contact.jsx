@@ -28,7 +28,7 @@ export default function LinksContact(props) {
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="mailto:karoly@webdevme.co.uk">
+                        href="mailto:karoly.webdev@gmail.com">
                         <Send className="icon contact-icon send-icon" />
                     </a>
                 </li>
